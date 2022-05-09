@@ -52,4 +52,8 @@ The need for this system arises from the expanding demand on **gyms**. A mangeme
 
 4. Reliability.
 
+## System architecture:
+
+We will use **server-client architecture**, server will contain the database and all the information of the clients and employees while client will be the link between the user and the server.
+
 
