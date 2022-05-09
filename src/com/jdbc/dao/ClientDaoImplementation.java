@@ -28,7 +28,7 @@ public class ClientDaoImplementation implements ClientDao {
 
     @Override
     public void delete(int id) throws SQLException {
-        String query = "delete from employee where emp_id =?";
+        String query = "delete from client where client_id =?";
         PreparedStatement stmt = con.prepareStatement(query);
         stmt.setInt(1,id);
         stmt.executeUpdate();

@@ -18,8 +18,8 @@ public class Main {
         //read all clients
         List<Client> ls = clientDaoImplementation.getClients();
         for (Client allclient:ls){
-            System.out.println(allclient.getClient_name()+" "+allclient.getClient_address());
+            System.out.println(allclient.getClient_id()+" "+allclient.getClient_name()+" "+allclient.getClient_address());
         }
-
+//        clientDaoImplementation.delete(3);
     }
 }
