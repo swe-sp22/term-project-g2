@@ -16,6 +16,14 @@ The need for this system arises from the expanding demand on **gyms**. A mangeme
 
 - **Employee:** General term refers to the employees in the gym, but they won't have direct access to the system. This include **accountants** and **personal trainers**.
 
+- Server:
+
+- Client:
+
+- Database:
+
+- Tuple 
+
 ## User requirements definition:
 
 ### Functional requirements:
@@ -55,5 +63,41 @@ The need for this system arises from the expanding demand on **gyms**. A mangeme
 ## System architecture:
 
 We will use **server-client architecture**, server will contain the database and all the information of the clients and employees while client will be the link between the user and the server.
+
+## System requirements specification:
+
+### Functional requirements:
+
+1. Login will make a request to the database to verify the credentials of the manager.
+
+2. User will have a form that he will enter the new client information into and this infomation shall be add as a tuple in the database.
+
+3. User will have a form that he will enter the new employee information into and this information shall be add as a tuple in the database.
+
+4. User shall search using the client's name, ID or phone number then select the piece of information that he wants to change.
+
+5. User shall search using the employee's name, ID or phone number then select the piece of information that he wants to change.
+
+6. User will have a form that he will enter the infromation necessary for a new membership (information will be specified in the Database schema).
+
+7. User shall select a month, the client will request the information from the server and the server shall reply with the necessary information for the monthly income report.
+
+8. User shall get notified when a membership expires.
+
+9. User shall search for a client using his name, ID or phone number.
+
+10. User shall search for an employee using his name, ID or phone number.
+
+11. User shall see prices corresponding to the duration of each membership and shall be able to change this prices.
+
+### Non-functional requirements:
+
+1.  It shall take no longer than **three hours** for the user to learn the system and get to an average of **three misuses**per hour.
+
+2. Credentials of the user should be encrypted.
+
+3. System shall take no longer than **five minutes**to restart after failure.
+
+4. System shall fail **less than three times per day**.
 
 
