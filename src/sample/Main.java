@@ -13,7 +13,8 @@ public class Main extends Application {
 
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("Gym Management System");
-        primaryStage.setScene(new Scene(root, 1086, 733));
+        primaryStage.setScene(new Scene(root, 991, 661));
+        primaryStage.setMaximized(true);
         primaryStage.show();
 
     }
