@@ -11,8 +11,8 @@ public class DatabaseConnection {
     static //Is used to initialize the static data member.
     {
         try {
-            Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql:// localhost:3306/org", "root", "root");
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/gym_management_system", "root", "");
         }
         catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
