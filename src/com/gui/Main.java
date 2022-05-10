@@ -12,8 +12,11 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
 
         Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
+        Scene scene = new Scene(root, 1129, 750);
+        String css = this.getClass().getResource("login.css").toExternalForm();
+        scene.getStylesheets().add(css);
         primaryStage.setTitle("Gym Management System");
-        primaryStage.setScene(new Scene(root, 1129, 750));
+        primaryStage.setScene(scene);
         //primaryStage.setMaximized(true);
         primaryStage.show();
 
