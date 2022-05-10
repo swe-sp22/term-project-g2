@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1129.0" style="-fx-background-color: #222831;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1129.0" style="-fx-background-color: #222831;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="com.gui.Controller">
    <center>
       <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="755.0" prefWidth="861.0" BorderPane.alignment="CENTER">
          <children>
@@ -25,7 +25,7 @@
                         <Font name="System Bold" size="36.0" />
                      </font>
                   </Text>
-                  <Button defaultButton="true" layoutX="96.0" layoutY="517.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="423.0" style="-fx-background-color: #393E46; -fx-cursor: hand;" text="Log in" textAlignment="CENTER" textFill="WHITE">
+                  <Button fx:id="loginButton" defaultButton="true" layoutX="96.0" layoutY="517.0" mnemonicParsing="false" onAction="#handleLoginButton" prefHeight="50.0" prefWidth="423.0" style="-fx-background-color: #393E46; -fx-cursor: hand;" text="Log in" textAlignment="CENTER" textFill="WHITE" >
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
