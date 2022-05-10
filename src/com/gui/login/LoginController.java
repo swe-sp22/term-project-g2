@@ -1,4 +1,4 @@
-package com.gui;
+package com.gui.login;
 
 import com.sun.xml.internal.bind.v2.TODO;
 import javafx.fxml.FXML;
