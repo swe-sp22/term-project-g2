@@ -1,4 +1,4 @@
-package sample;
+package com.gui;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -11,10 +11,10 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
         primaryStage.setTitle("Gym Management System");
-        primaryStage.setScene(new Scene(root, 991, 661));
-        primaryStage.setMaximized(true);
+        primaryStage.setScene(new Scene(root, 1129, 750));
+        //primaryStage.setMaximized(true);
         primaryStage.show();
 
     }
