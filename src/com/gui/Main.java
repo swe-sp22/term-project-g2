@@ -11,9 +11,9 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("login/login.fxml"));
         Scene scene = new Scene(root, 1129, 750);
-        String css = this.getClass().getResource("login.css").toExternalForm();
+        String css = this.getClass().getResource("login/login.css").toExternalForm();
         scene.getStylesheets().add(css);
         primaryStage.setTitle("Gym Management System");
         primaryStage.setScene(scene);
