@@ -1,0 +1,22 @@
+.root{
+    /*-fx-background-image: url("images/1.jpg");*/
+    -fx-background-color: "#222831";
+}
+.text{
+    -fx-font-size: 20;
+}
+
+#loginButton{
+    -fx-background-color: "#393E46";
+}
+
+#title{
+    -fx-font-family: "Poppins SemiBold";
+    -fx-font-size: 36;
+    -fx-alignment: "center";
+}
+#loginLabel{
+    -fx-font-family: "Poppins";
+    -fx-font-size: 20;
+    -fx-alignment: "center";
+}
