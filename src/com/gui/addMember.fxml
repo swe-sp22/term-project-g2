@@ -18,12 +18,12 @@
       <TextField fx:id="addMemberName" layoutX="752.0" layoutY="266.0" prefHeight="47.0" prefWidth="417.0" promptText="name" />
       <TextField fx:id="addMemberPhone" layoutX="751.0" layoutY="340.0" prefHeight="47.0" prefWidth="417.0" promptText="phone number" />
       <TextField fx:id="addMemberDOB" layoutX="751.0" layoutY="410.0" prefHeight="47.0" prefWidth="417.0" promptText="date of birth" />
-      <Button fx:id="saveMember" layoutX="751.0" layoutY="875.0" mnemonicParsing="false" onAction="#addMemberToDB" prefHeight="31.0" prefWidth="189.0" text="Save">
+      <Button fx:id="saveMember" layoutX="751.0" layoutY="875.0" mnemonicParsing="false" onAction="#addMemberToDB" prefHeight="31.0" prefWidth="189.0" style="-fx-background-color: #222831;" text="Save" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="cancelAddingMember" layoutX="980.0" layoutY="875.0" mnemonicParsing="false" onAction="#gotoMainScreen" prefHeight="31.0" prefWidth="189.0" text="Cancel">
+      <Button fx:id="cancelAddingMember" layoutX="980.0" layoutY="875.0" mnemonicParsing="false" onAction="#gotoMainScreen" prefHeight="31.0" prefWidth="189.0" style="-fx-background-color: #222831;" text="Cancel" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
