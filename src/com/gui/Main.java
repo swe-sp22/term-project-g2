@@ -12,6 +12,8 @@ public class Main extends Application {
     public static String loginScreenFile = "login.fxml";
     public static String mainScreenName = "mainScreen";
     public static String mainScreenFile = "mainScreen.fxml";
+    public static String addMemberScreenName = "addMemberScreen";
+    public static String addMemberScreenFile = "addMember.fxml";
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -19,23 +21,18 @@ public class Main extends Application {
         ScreensController mainContainer = new ScreensController();
         mainContainer.loadScreen(Main.loginScreenName,Main.loginScreenFile);
         mainContainer.loadScreen(Main.mainScreenName,Main.mainScreenFile);
+        mainContainer.loadScreen(Main.addMemberScreenName,Main.addMemberScreenFile);
 
         mainContainer.setScreen(Main.loginScreenName);
 
         Group root = new Group();
         root.getChildren().addAll(mainContainer);
-        Scene scene = new Scene(root);
+        Scene scene = new Scene(root, 1920,1080);
+        primaryStage.setTitle("Gym Management System");
+        primaryStage.setMaximized(true);
         primaryStage.setScene(scene);
         primaryStage.show();
 
-//        Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
-//        Scene scene = new Scene(root, 1129, 750);
-//        String css = this.getClass().getResource("login.css").toExternalForm();
-//        scene.getStylesheets().add(css);
-//        primaryStage.setTitle("Gym Management System");
-//        primaryStage.setScene(scene);
-//        //primaryStage.setMaximized(true);
-//        primaryStage.show();
 
 
     }
