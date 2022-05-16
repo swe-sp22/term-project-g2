@@ -6,11 +6,11 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
 
-<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="631.0" prefWidth="974.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.mainScreenController">
-   <center>
-      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.mainScreenController">
+   <top>
+      <Pane prefHeight="1080.0" prefWidth="1920.0" BorderPane.alignment="CENTER">
          <children>
-            <Label layoutX="422.0" layoutY="24.0" text="Welcome Manager!" />
+            <Label layoutX="891.0" layoutY="24.0" text="Welcome Manager!" />
             <Button fx:id="addMember" layoutX="85.0" layoutY="75.0" mnemonicParsing="false" onAction="#gotoAddMemberScreen" prefHeight="53.0" prefWidth="189.0" text="Add Member">
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -27,11 +27,11 @@
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
-            <Button fx:id="logout" layoutX="609.0" layoutY="19.0" mnemonicParsing="false" onAction="#gotoLoginScreen" prefHeight="29.0" prefWidth="131.0" text="Logout">
+            <Button fx:id="logout" layoutX="1705.0" layoutY="20.0" mnemonicParsing="false" onAction="#gotoLoginScreen" prefHeight="29.0" prefWidth="131.0" text="Logout">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
          </children>
       </Pane>
-   </center>
+   </top>
 </BorderPane>

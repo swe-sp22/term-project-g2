@@ -32,29 +32,13 @@ public class LoginController implements IControlledScreen{
     @FXML
     private void gotoMainScreen(javafx.event.ActionEvent actionEvent) {
         if (username.getText().equals("sallam") && password.getText().equals("12345")){
-//            Stage stage = (Stage) loginButton.getScene().getWindow();
-////            stage.close();
-//            try {
-//                BorderPane root2 = FXMLLoader.load(getClass().getResource("mainScreen.fxml"));
-//                root.getChildren().setAll(root2);
-//            } catch (Exception e) {
-//                e.printStackTrace();
-//            }
+//
             mycontroller.setScreen(Main.mainScreenName);
             System.out.println("Welcome!");
             username.setText("");
             password.setText("");
         }
     }
-
-//    private void openScreen(String location, String title)throws Exception{
-//
-////        Scene scene = new Scene(root, 1129, 750);
-////        Stage stage = new Stage(StageStyle.DECORATED);
-////        stage.setScene(scene);
-////        stage.setTitle(title);
-////        stage.show();
-//    }
 
 
 }

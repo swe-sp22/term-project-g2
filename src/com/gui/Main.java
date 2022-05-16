@@ -27,19 +27,12 @@ public class Main extends Application {
 
         Group root = new Group();
         root.getChildren().addAll(mainContainer);
-        Scene scene = new Scene(root, 1129,750);
+        Scene scene = new Scene(root, 1920,1080);
         primaryStage.setTitle("Gym Management System");
+        primaryStage.setMaximized(true);
         primaryStage.setScene(scene);
         primaryStage.show();
 
-//        Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
-//        Scene scene = new Scene(root, 1129, 750);
-//        String css = this.getClass().getResource("login.css").toExternalForm();
-//        scene.getStylesheets().add(css);
-//        primaryStage.setTitle("Gym Management System");
-//        primaryStage.setScene(scene);
-//        //primaryStage.setMaximized(true);
-//        primaryStage.show();
 
 
     }
