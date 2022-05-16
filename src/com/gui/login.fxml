@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Text?>
 
 <?import javafx.scene.control.PasswordField?>
-<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1129.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.login.LoginController">
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1129.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.LoginController">
    <center>
       <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="755.0" prefWidth="861.0" BorderPane.alignment="CENTER">
          <children>
@@ -23,7 +23,7 @@
                   </Text>
                   <Text fx:id="title" layoutX="57.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GYM MANAGEMENT SYSTEM">
                   </Text>
-                  <Button fx:id="loginButton" defaultButton="true" layoutX="96.0" layoutY="517.0" mnemonicParsing="false" onAction="#handleLoginButton" prefHeight="50.0" prefWidth="423.0" style="-fx-cursor: hand;" text="Log in" textAlignment="CENTER" textFill="WHITE">
+                  <Button fx:id="loginButton" defaultButton="true" layoutX="96.0" layoutY="517.0" mnemonicParsing="false" onAction="#gotoMainScreen" prefHeight="50.0" prefWidth="423.0" style="-fx-cursor: hand;" text="Log in" textAlignment="CENTER" textFill="WHITE">
                   </Button>
                </children></Pane>
          </children>
