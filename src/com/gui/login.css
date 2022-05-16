@@ -1,8 +1,11 @@
-.root{
+#root{
     /*-fx-background-image: url("images/1.jpg");*/
     -fx-background-color: "#222831";
 }
-.text{
+#root2{
+    -fx-background-color: "#393E46";
+}
+#text{
     -fx-font-size: 20;
 }
 
