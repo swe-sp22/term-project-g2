@@ -1,11 +1,15 @@
 package com.gui;
 
+import com.jdbc.dao.MemberDaoImplementation;
+import com.jdbc.util.DatabaseConnection;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+
+import java.sql.Connection;
 
 public class Main extends Application {
     public static String loginScreenName = "loginScreen";
@@ -16,10 +20,9 @@ public class Main extends Application {
     public static String addMemberScreenFile = "addMember.fxml";
     public static String showMembersScreenName = "showMembersScreen";
     public static String showMembersScreenFile = "showMembers.fxml";
-
+    MemberDaoImplementation member = new MemberDaoImplementation();
     @Override
     public void start(Stage primaryStage) throws Exception {
-
         ScreensController mainContainer = new ScreensController();
         mainContainer.loadScreen(Main.loginScreenName,Main.loginScreenFile);
         mainContainer.loadScreen(Main.mainScreenName,Main.mainScreenFile);
@@ -40,7 +43,6 @@ public class Main extends Application {
 
 
     }
-
     public static void main(String[] args) { launch(args);}
 
 //        Client client = new Client();
