@@ -7,12 +7,12 @@ public class Employee {
     private int EID;
     private String name;
     private String address;
-    private int phone_no;
+    private String phone_no;
     private LocalDate dob;
     private String role;
-    private float salary;
+    private String salary;
 
-    public Employee(String name, String address, int phone_no, LocalDate dob, String role, float salary) {
+    public Employee(String name, String address, String phone_no, LocalDate dob, String role, String salary) {
         this.name = name;
         this.address = address;
         this.phone_no = phone_no;
@@ -45,11 +45,11 @@ public class Employee {
         this.address = address;
     }
 
-    public int getPhone_no() {
+    public String getPhone_no() {
         return phone_no;
     }
 
-    public void setPhone_no(int phone_no) {
+    public void setPhone_no(String phone_no) {
         this.phone_no = phone_no;
     }
 
@@ -69,11 +69,11 @@ public class Employee {
         this.role = role;
     }
 
-    public float getSalary() {
+    public String getSalary() {
         return salary;
     }
 
-    public void setSalary(float salary) {
+    public void setSalary(String salary) {
         this.salary = salary;
     }
 }

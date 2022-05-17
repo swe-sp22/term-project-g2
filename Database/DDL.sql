@@ -14,8 +14,8 @@ create table if not exists `User`(
 create table if not exists `Member`(
     `MID` int auto_increment,
     name varchar(256) not null,
-    phone_no int not null,
-    dob DATE not null,
+    phone_no varchar(256) not null,
+    dob date not null,
     MSID int,
     EID int,
     primary key (MID),
@@ -34,10 +34,10 @@ create table if not exists Employee(
     EID int auto_increment,
     name varchar(256) not null,
     address varchar(256) not null,
-    phone_no int not null,
+    phone_no varchar(256) not null,
     dob date not null,
     role varchar(256) not null,
-    salary float not null,
+    salary varchar(256) not null,
     primary key (EID)   
 );
 

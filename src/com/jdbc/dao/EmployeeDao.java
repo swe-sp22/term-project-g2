@@ -6,6 +6,7 @@ import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.List;
 
 public class EmployeeDao {
     static Connection con = DatabaseConnection.getConnection();
@@ -22,11 +23,15 @@ public class EmployeeDao {
         PreparedStatement stmt = con.prepareStatement(query);
         stmt.setString(1, newEmployee.getName());
         stmt.setString(2, newEmployee.getAddress());
-        stmt.setInt(3, newEmployee.getPhone_no());
+        stmt.setString(3, newEmployee.getPhone_no());
         stmt.setDate(4, Date.valueOf(newEmployee.getDob()));
         stmt.setString(5, newEmployee.getRole());
-        stmt.setFloat(6, newEmployee.getSalary());
+        stmt.setString(6, newEmployee.getSalary());
 
         return stmt.executeUpdate();
+    }
+
+    public List<Employee> getAllEmployees() throws SQLException{
+        return null;
     }
 }

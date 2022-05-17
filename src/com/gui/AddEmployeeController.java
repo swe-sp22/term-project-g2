@@ -34,7 +34,7 @@ public class AddEmployeeController implements IControlledScreen {
     public void addEmployeeToDb(ActionEvent actionEvent) throws SQLException {
         System.out.println("added");
         //TODO: Add logic
-        Employee newEmployee = new Employee(name.getText(), address.getText(), 025, dob.getValue(), role.getText(), 20);
+        Employee newEmployee = new Employee(name.getText(), address.getText(), phone_no.getText(), dob.getValue(), role.getText(), salary.getText());
         EmployeeDao employeeDao = new EmployeeDao();
         int value = employeeDao.addEmployee(newEmployee);
         System.out.println(value);
