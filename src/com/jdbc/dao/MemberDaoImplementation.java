@@ -40,7 +40,7 @@ public class MemberDaoImplementation implements MemberDao {
         String query = "select * from member where member_id = ?";
         PreparedStatement stmt = con.prepareStatement(query);
         stmt.setInt(1,id);
-        Member member = new Member();  //after getting the data , creates a new object from member class
+        //Member member = new Member();  //after getting the data , creates a new object from member class
         ResultSet rs = stmt.executeQuery();
         boolean check = false;
         while (rs.next()) {
@@ -50,11 +50,12 @@ public class MemberDaoImplementation implements MemberDao {
             //member.setMember_address(rs.getString("member_address"));
         }
         if(check==true){
-            return member;
+          //  return member;
         }
         else{
             return null;
         }
+        return null;
     }
 
     @Override
@@ -64,11 +65,11 @@ public class MemberDaoImplementation implements MemberDao {
         ResultSet rs = stmt.executeQuery();
         List<Member> ls = new ArrayList();
         while(rs.next()){
-            Member member = new Member();
+           // Member member = new Member();
             //member.setMember_id(rs.getInt("member_id"));
             //member.setMember_name(rs.getString("member_name"));
             //member.setMember_address(rs.getString("member_address"));
-            ls.add(member);
+           // ls.add(member);
         }
         return ls;
     }

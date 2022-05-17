@@ -1,5 +1,6 @@
 package com.gui;
 
+import com.jdbc.dao.UserDao;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.PasswordField;
@@ -7,6 +8,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import  javafx.scene.control.Button;
+
+import java.sql.SQLException;
 
 
 public class LoginController implements IControlledScreen{
@@ -30,8 +33,11 @@ public class LoginController implements IControlledScreen{
         mycontroller = screenParent;
     }
     @FXML
-    private void gotoMainScreen(javafx.event.ActionEvent actionEvent) {
-        if (username.getText().equals("sallam") && password.getText().equals("12345")){
+    private void gotoMainScreen(javafx.event.ActionEvent actionEvent) throws SQLException {
+        UserDao userDao = new UserDao();
+        String insertedUsername = username.getText();
+        String insertedPassword = password.getText();
+        if (userDao.checkCredentials(insertedUsername, insertedPassword)){
 //
             mycontroller.setScreen(Main.mainScreenName);
             System.out.println("Welcome!");

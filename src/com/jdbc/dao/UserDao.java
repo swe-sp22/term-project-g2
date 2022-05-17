@@ -9,24 +9,22 @@ import java.sql.SQLException;
 
 public class UserDao {
     static Connection con = DatabaseConnection.getConnection();
-    public boolean getUser(String username, String password) throws SQLException {
-        String query = "select * from member where member_id = ?";
+    public static boolean checkCredentials(String username, String password) throws SQLException {
+        String query = "select * from user where username = ? and password = ?";
         PreparedStatement stmt = con.prepareStatement(query);
-        stmt.setInt(1,id);
-        Member member = new Member();  //after getting the data , creates a new object from member class
+        stmt.setString(1, username);
+        stmt.setString(2, password);
+        User currentUser = new User();
         ResultSet rs = stmt.executeQuery();
-        boolean check = false;
-        while (rs.next()) {
-            check = true;
+        boolean found = false;
+        if (rs.next()) {
+            found = true;
+            currentUser.setUsername(rs.getString("username"));
+            currentUser.setPassword(rs.getString("password"));
             //member.setMember_id(rs.getInt("member_id"));
             //member.setMember_name(rs.getString("member_name"));
             //member.setMember_address(rs.getString("member_address"));
         }
-        if(check==true){
-            return member;
-        }
-        else{
-            return null;
-        }
+        return found;
     }
 }
