@@ -3,6 +3,7 @@ package com.jdbc.dao;
 import com.jdbc.model.Employee;
 import com.jdbc.util.DatabaseConnection;
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
@@ -22,7 +23,7 @@ public class EmployeeDao {
         stmt.setString(1, newEmployee.getName());
         stmt.setString(2, newEmployee.getAddress());
         stmt.setInt(3, newEmployee.getPhone_no());
-        stmt.setDate(4, newEmployee.getDob());
+        stmt.setDate(4, Date.valueOf(newEmployee.getDob()));
         stmt.setString(5, newEmployee.getRole());
         stmt.setFloat(6, newEmployee.getSalary());
 

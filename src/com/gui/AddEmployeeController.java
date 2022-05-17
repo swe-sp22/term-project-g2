@@ -1,9 +1,14 @@
 package com.gui;
 
+import com.jdbc.dao.EmployeeDao;
+import com.jdbc.model.Employee;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
+
+import java.sql.Date;
+import java.sql.SQLException;
 
 public class AddEmployeeController implements IControlledScreen {
     @FXML
@@ -26,10 +31,14 @@ public class AddEmployeeController implements IControlledScreen {
         mycontroller = screenParent;
     }
 
-    public void addEmployeeToDb(ActionEvent actionEvent){
+    public void addEmployeeToDb(ActionEvent actionEvent) throws SQLException {
         System.out.println("added");
         //TODO: Add logic
-        
+        Employee newEmployee = new Employee(name.getText(), address.getText(), 025, dob.getValue(), role.getText(), 20);
+        EmployeeDao employeeDao = new EmployeeDao();
+        int value = employeeDao.addEmployee(newEmployee);
+        System.out.println(value);
+
 
     }
     public void gotoMainScreen(ActionEvent actionEvent) {
