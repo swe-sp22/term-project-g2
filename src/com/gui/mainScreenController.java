@@ -30,6 +30,7 @@ public class mainScreenController implements IControlledScreen {
     }
 
     public void gotoAddEmployeeScreen(ActionEvent actionEvent) {
+        mycontroller.setScreen(Main.addEmployeeScreenName);
     }
 
     public void gotoShowEmployees(ActionEvent actionEvent) {

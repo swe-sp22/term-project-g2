@@ -1,42 +1,82 @@
 package com.jdbc.model;
 
+import java.time.LocalDate;
+
 public class Member {
+    /*
+    * create table if not exists `Member`(
+    `MID` int auto_increment,
+    name varchar(256) not null,
+    phone_no int not null,
+    dob DATE not null,
+    MSID int,
+    EID int,
+    primary key (MID),
+    foreign key (MSID) references `Membership type`(MSID),
+    foreign key (EID) references Employee(EID)
+);*/
+    private int MID;
+    private String name;
+    private int phone_no;
+    private LocalDate dob;
+    private int MSID;
+    private int EID;
 
-    int member_id;
-    String member_name;
-    String member_address;
+    //! notice the empty constructor
 
-
-    public Member() {}
-    public Member(String emp_name, String emp_address)
-    {
-        this.member_name = emp_name;
-        this.member_address = emp_address;
-    }
-    public int getMember_id()
-    {
-        return member_id;
-    }
-    public void setMember_id(int member_id)
-    {
-        this.member_id = member_id;
-    }
-    public String getMember_name()
-    {
-        return member_name;
-    }
-    public void setMember_name(String member_name)
-    {
-        this.member_name = member_name;
-    }
-    public String getMember_address()
-    {
-        return member_address;
+    public Member(String name, int phone_no, LocalDate dob, int MSID, int EID) {
+        this.name = name;
+        this.phone_no = phone_no;
+        this.dob = dob;
+        this.MSID = MSID;
+        this.EID = EID;
     }
 
-    public void setMember_address(String member_address)
-    {
-        this.member_address = member_address;
+    public int getMID() {
+        return MID;
     }
 
+    public void setMID(int MID) {
+        this.MID = MID;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getPhone_no() {
+        return phone_no;
+    }
+
+    public void setPhone_no(int phone_no) {
+        this.phone_no = phone_no;
+    }
+
+    public LocalDate getDob() {
+        return dob;
+    }
+
+    public void setDob(LocalDate dob) {
+        this.dob = dob;
+    }
+
+    public int getMSID() {
+        return MSID;
+    }
+
+    public void setMSID(int MSID) {
+        this.MSID = MSID;
+    }
+
+    public int getEID() {
+        return EID;
+    }
+
+    public void setEID(int EID) {
+        this.EID = EID;
+    }
 }
