@@ -8,22 +8,22 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.addMemberController">
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.addMemberController">
    <children>
-      <Text layoutX="828.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add New Member" wrappingWidth="269.57470703125">
+      <Text fill="WHITE" layoutX="796.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add New Member" wrappingWidth="326.9080810546875">
          <font>
-            <Font name="Segoe UI Semibold" size="29.0" />
+            <Font name="Segoe UI Semibold" size="37.0" />
          </font>
       </Text>
       <TextField fx:id="addMemberName" layoutX="752.0" layoutY="266.0" prefHeight="47.0" prefWidth="417.0" promptText="name" />
       <TextField fx:id="addMemberPhone" layoutX="751.0" layoutY="340.0" prefHeight="47.0" prefWidth="417.0" promptText="phone number" />
       <TextField fx:id="addMemberDOB" layoutX="751.0" layoutY="410.0" prefHeight="47.0" prefWidth="417.0" promptText="date of birth" />
-      <Button fx:id="saveMember" layoutX="751.0" layoutY="875.0" mnemonicParsing="false" onAction="#addMemberToDB" prefHeight="31.0" prefWidth="189.0" style="-fx-background-color: #222831;" text="Save" textFill="WHITE">
+      <Button fx:id="saveMember" layoutX="751.0" layoutY="856.0" mnemonicParsing="false" onAction="#addMemberToDB" prefHeight="50.0" prefWidth="189.0" style="-fx-background-color: #D65A31;" text="Save" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="cancelAddingMember" layoutX="980.0" layoutY="875.0" mnemonicParsing="false" onAction="#gotoMainScreen" prefHeight="31.0" prefWidth="189.0" style="-fx-background-color: #222831;" text="Cancel" textFill="WHITE">
+      <Button fx:id="cancelAddingMember" layoutX="980.0" layoutY="856.0" mnemonicParsing="false" onAction="#gotoMainScreen" prefHeight="50.0" prefWidth="189.0" style="-fx-background-color: #D65A31;" text="Cancel" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
