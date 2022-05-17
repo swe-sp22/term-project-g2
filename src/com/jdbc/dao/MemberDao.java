@@ -2,17 +2,17 @@ package com.jdbc.dao;
 import java.sql.SQLException;
 import java.util.List;
 
-import com.jdbc.model.Client;
+import com.jdbc.model.Member;
 
-public interface ClientDao {
-    public int add(Client client)
+public interface MemberDao {
+    public int add(Member member)
             throws SQLException;
     public void delete(int id)
             throws SQLException;
-    public Client getClient(int id)
+    public Member getMember(int id)
             throws SQLException;
-    public List<Client> getClients()
+    public List<Member> getMembers()
             throws SQLException;
-    public void update(Client client)
+    public void update(Member member)
             throws SQLException;
 }
