@@ -20,28 +20,28 @@
                   <Font name="System Bold" size="40.0" />
                </font>
             </Text>
-            <TextField prefHeight="47.0" prefWidth="417.0" promptText="Name" style="-fx-background-color: #EEEEEE;">
+            <TextField fx:id="name" prefHeight="47.0" prefWidth="417.0" promptText="Name" style="-fx-background-color: #EEEEEE;">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
             </TextField>
-            <TextField prefHeight="47.0" prefWidth="417.0" promptText="Address" style="-fx-background-color: #EEEEEE;">
+            <TextField fx:id="address" prefHeight="47.0" prefWidth="417.0" promptText="Address" style="-fx-background-color: #EEEEEE;">
                <font>
                   <Font size="20.0" />
                </font>
             </TextField>
-            <TextField prefHeight="47.0" prefWidth="417.0" promptText="Phone number" style="-fx-background-color: #EEEEEE;">
+            <TextField fx:id="phone_no" prefHeight="47.0" prefWidth="417.0" promptText="Phone number" style="-fx-background-color: #EEEEEE;">
                <font>
                   <Font size="20.0" />
                </font>
             </TextField>
-            <DatePicker prefHeight="47.0" prefWidth="417.0" promptText="Date of birth" />
-            <TextField prefHeight="47.0" prefWidth="417.0" promptText="Role" style="-fx-background-color: #EEEEEE;">
+            <DatePicker fx:id="dob" prefHeight="47.0" prefWidth="417.0" promptText="Date of birth" />
+            <TextField fx:id="role" prefHeight="47.0" prefWidth="417.0" promptText="Role" style="-fx-background-color: #EEEEEE;">
                <font>
                   <Font size="20.0" />
                </font>
             </TextField>
-            <TextField prefHeight="47.0" prefWidth="417.0" promptText="Salary" style="-fx-background-color: #EEEEEE;">
+            <TextField fx:id="salary" prefHeight="47.0" prefWidth="417.0" promptText="Salary" style="-fx-background-color: #EEEEEE;">
                <font>
                   <Font size="20.0" />
                </font>

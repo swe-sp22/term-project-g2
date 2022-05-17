@@ -20,7 +20,9 @@ public class Main extends Application {
     public static String addMemberScreenFile = "addMember.fxml";
     public static String showMembersScreenName = "showMembersScreen";
     public static String showMembersScreenFile = "showMembers.fxml";
-    MemberDaoImplementation member = new MemberDaoImplementation();
+    public static String addEmployeeScreenName = "AddEmployee";
+    public static String addEmployeeScreenFile = "AddEmployee.fxml";
+
     @Override
     public void start(Stage primaryStage) throws Exception {
         ScreensController mainContainer = new ScreensController();
@@ -28,6 +30,7 @@ public class Main extends Application {
         mainContainer.loadScreen(Main.mainScreenName,Main.mainScreenFile);
         mainContainer.loadScreen(Main.addMemberScreenName,Main.addMemberScreenFile);
         mainContainer.loadScreen(Main.showMembersScreenName,Main.showMembersScreenFile);
+        mainContainer.loadScreen(Main.addEmployeeScreenName,Main.addEmployeeScreenFile);
 
         mainContainer.setScreen(Main.loginScreenName);
 

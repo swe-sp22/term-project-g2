@@ -8,11 +8,11 @@ public class Employee {
     private String name;
     private String address;
     private int phone_no;
-    private LocalDate dob;
+    private Date dob;
     private String role;
     private float salary;
 
-    public Employee(String name, String address, int phone_no, LocalDate dob, String role, float salary) {
+    public Employee(String name, String address, int phone_no, Date dob, String role, float salary) {
         this.name = name;
         this.address = address;
         this.phone_no = phone_no;
@@ -57,7 +57,7 @@ public class Employee {
         return dob;
     }
 
-    public void setDob(LocalDate dob) {
+    public void setDob(Date dob) {
         this.dob = dob;
     }
 
