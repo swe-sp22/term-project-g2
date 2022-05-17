@@ -2,10 +2,9 @@ package com.jdbc.dao;
 
 import com.jdbc.model.Employee;
 import com.jdbc.util.DatabaseConnection;
-import java.sql.Connection;
-import java.sql.Date;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+
+import java.sql.*;
+import java.util.ArrayList;
 import java.util.List;
 
 public class EmployeeDao {
@@ -32,6 +31,20 @@ public class EmployeeDao {
     }
 
     public List<Employee> getAllEmployees() throws SQLException{
-        return null;
+        String query = "select * from employee";
+        PreparedStatement stmt = con.prepareStatement(query);
+        ResultSet rs = stmt.executeQuery();
+        List<Employee> employees = new ArrayList();
+        while (rs.next()){
+            Employee employee = new Employee();
+            employee.setName(rs.getString("name"));
+            employee.setAddress(rs.getString("address"));
+            employee.setDob(rs.getDate("dob").toLocalDate());
+            employee.setRole(rs.getString("role"));
+            employee.setSalary(rs.getString("salary"));
+            employee.setPhone_no(rs.getString("phone_no"));
+            employees.add(employee);
+        }
+        return employees;
     }
 }
