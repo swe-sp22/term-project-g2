@@ -24,4 +24,8 @@ public class mainScreenController implements IControlledScreen {
     public void gotoAddMemberScreen(javafx.event.ActionEvent actionEvent) {
         mycontroller.setScreen(Main.addMemberScreenName);
     }
+
+    public void gotoShowMembers(ActionEvent actionEvent) {
+       mycontroller.setScreen(Main.showMembersScreenName);
+    }
 }
