@@ -1,5 +1,6 @@
 package com.jdbc.model;
 
+import java.sql.Date;
 import java.time.LocalDate;
 
 public class Employee {
@@ -52,7 +53,7 @@ public class Employee {
         this.phone_no = phone_no;
     }
 
-    public LocalDate getDob() {
+    public Date getDob() {
         return dob;
     }
 

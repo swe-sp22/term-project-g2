@@ -21,9 +21,6 @@ public class UserDao {
             found = true;
             currentUser.setUsername(rs.getString("username"));
             currentUser.setPassword(rs.getString("password"));
-            //member.setMember_id(rs.getInt("member_id"));
-            //member.setMember_name(rs.getString("member_name"));
-            //member.setMember_address(rs.getString("member_address"));
         }
         return found;
     }
