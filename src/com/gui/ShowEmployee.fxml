@@ -6,9 +6,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="1000.0" prefWidth="1500.0" style="-fx-background-color: #222831;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.ShowEmployeeController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #222831;" stylesheets="@Table.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.ShowEmployeeController">
    <children>
-      <TableView fx:id="employees" layoutX="107.0" layoutY="53.0" prefHeight="765.0" prefWidth="1285.0" tableMenuButtonVisible="true">
+      <TableView fx:id="employees" layoutX="749.0" layoutY="303.0" stylesheets="@Table.css" tableMenuButtonVisible="true">
         <columns>
           <TableColumn fx:id="EID" prefWidth="75.0" text="EID" />
           <TableColumn fx:id="name" prefWidth="75.0" text="name" />
@@ -19,7 +19,7 @@
             <TableColumn fx:id="phone_no" prefWidth="75.0" text="phone number" />
         </columns>
       </TableView>
-      <Button layoutX="665.0" layoutY="866.0" mnemonicParsing="false" onAction="#gotoMainScreen" prefHeight="75.0" prefWidth="169.0" style="-fx-background-color: #D65A31;" text="Return" textAlignment="CENTER" textFill="#943c3c">
+      <Button layoutX="868.0" layoutY="892.0" mnemonicParsing="false" onAction="#gotoMainScreen" prefHeight="75.0" prefWidth="169.0" style="-fx-background-color: #D65A31;" text="Return" textAlignment="CENTER" textFill="#943c3c">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>

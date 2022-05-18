@@ -53,10 +53,13 @@ public class ShowEmployeeController implements IControlledScreen, Initializable 
         mycontroller.setScreen(Main.mainScreenName);
     }
 
-    public void initialize(URL location, ResourceBundle resources){
+    public void initialize(URL location, ResourceBundle resources) {
         display();
     }
-    private void display(){
+
+    public void display(){
+        // TODO: Fixes the need to restart the program on employee update
+        // The problem is that all the scenes are loaded only at the beginnening of the program
 
         EmployeeDao employeeDao = new EmployeeDao();
         EID.setCellValueFactory(new PropertyValueFactory<>("EID"));
