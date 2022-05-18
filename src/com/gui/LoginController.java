@@ -38,7 +38,6 @@ public class LoginController implements IControlledScreen{
         String insertedUsername = username.getText();
         String insertedPassword = password.getText();
         if (userDao.checkCredentials(insertedUsername, insertedPassword)){
-//
             mycontroller.setScreen(Main.mainScreenName);
             System.out.println("Welcome!");
             username.setText("");
