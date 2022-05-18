@@ -2,35 +2,49 @@ package com.gui;
 
 import com.jdbc.dao.EmployeeDao;
 import com.jdbc.model.Employee;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 
-public class ShowEmployeeController implements IControlledScreen{
+import java.net.URL;
+import java.sql.SQLException;
+import java.time.LocalDate;
+import java.util.ResourceBundle;
 
-    @FXML
-    private TableColumn<?, ?> EID;
-
-    @FXML
-    private TableColumn<?, ?> address;
-
-    @FXML
-    private TableColumn<?, ?> dob;
+public class ShowEmployeeController implements IControlledScreen, Initializable {
 
     @FXML
-    private TableView<?> employees;
+    private TableColumn<Employee, Integer> EID;
 
     @FXML
-    private TableColumn<?, ?> name;
+    private TableColumn<Employee, String> address;
 
     @FXML
-    private TableColumn<?, ?> role;
+    private TableColumn<Employee, LocalDate> dob;
 
     @FXML
-    private TableColumn<?, ?> salary;
+    private TableView<Employee> employees;
+
+    @FXML
+    private TableColumn<Employee, String> name;
+
+    @FXML
+    private TableColumn<Employee, String> role;
+
+    @FXML
+    private TableColumn<Employee, String> salary;
+
+    @FXML
+    private TableColumn<Employee, String> phone_no;
 
     ScreensController mycontroller;
+
+
 
     public void setScreenParent(ScreensController screenParent){
         mycontroller = screenParent;
@@ -39,9 +53,28 @@ public class ShowEmployeeController implements IControlledScreen{
         mycontroller.setScreen(Main.mainScreenName);
     }
 
-    public void display(){
+    public void initialize(URL location, ResourceBundle resources){
+        display();
+    }
+    private void display(){
+
         EmployeeDao employeeDao = new EmployeeDao();
-        
+        EID.setCellValueFactory(new PropertyValueFactory<>("EID"));
+        address.setCellValueFactory(new PropertyValueFactory<>("address"));
+        name.setCellValueFactory(new PropertyValueFactory<>("name"));
+        phone_no.setCellValueFactory(new PropertyValueFactory<>("phone_no"));
+        role.setCellValueFactory(new PropertyValueFactory<>("role"));
+        salary.setCellValueFactory(new PropertyValueFactory<>("salary"));
+        dob.setCellValueFactory(new PropertyValueFactory<>("dob"));
+        ObservableList<Employee> employeeObservableList= null;
+        try {
+            employeeObservableList = FXCollections.observableArrayList(employeeDao.getAllEmployees());
+        } catch (SQLException e) {
+            System.out.println("eih ely7asa;");
+        }
+        System.out.println(employeeObservableList);
+        System.out.println("here");
+        employees.setItems(employeeObservableList);
     }
 
 }

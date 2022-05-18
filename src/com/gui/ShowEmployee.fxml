@@ -16,6 +16,7 @@
             <TableColumn fx:id="dob" prefWidth="75.0" text="date of birth" />
             <TableColumn fx:id="role" prefWidth="75.0" text="role" />
             <TableColumn fx:id="salary" prefWidth="75.0" text="salary" />
+            <TableColumn fx:id="phone_no" prefWidth="75.0" text="phone number" />
         </columns>
       </TableView>
       <Button layoutX="665.0" layoutY="866.0" mnemonicParsing="false" onAction="#gotoMainScreen" prefHeight="75.0" prefWidth="169.0" style="-fx-background-color: #D65A31;" text="Return" textAlignment="CENTER" textFill="#943c3c">
