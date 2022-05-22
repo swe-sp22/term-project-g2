@@ -108,7 +108,7 @@ System is designed based on the assumptions that a wider variety of users may us
 
 ## Appendices:
 
-<img title="" src="file:///F:/8th Term/Software Engineering/term-project-g2/Documentation/ERD.png" alt="" data-align="center">
+<img title="" src="Documentation/ERD.png" alt="" data-align="center">
 
 # Software process
 
@@ -188,31 +188,31 @@ using **OOP** made it easier to model the database tables to our application usi
 
 A **use case diagram** is a graphical depiction of a user's possible interactions with a system. A use case diagram shows various use cases and different types of users the system has and will often be accompanied by other types of diagrams as well. The use cases are represented by either circles or ellipses. The actors are often shown as stick figures.
 
-<img src="file:///F:/8th%20Term/Software%20Engineering/term-project-g2/Documentation/Use%20Case%20Gym%20System.png" title="" alt="" data-align="center">
+<img src="Documentation/Use%20Case%20Gym%20System.png" title="" alt="" data-align="center">
 
 ### Class diagram:
 
 A type of static structure diagram that describes the structure of a system by showing the system's classes, their attributes, operations (or methods), and the relationships among objects.
 
-<img src="file:///F:/8th%20Term/Software%20Engineering/term-project-g2/Documentation/Class%20diagram.png" title="" alt="" data-align="center">
+<img src="Documentation/Class%20diagram.png" title="" alt="" data-align="center">
 
 ### State machine diagram:
 
 models the behaviour of a single object.
 
-<img src="file:///F:/8th%20Term/Software%20Engineering/term-project-g2/Documentation/state%20machine%20diagram.png" title="" alt="" data-align="center">
+<img src="Documentation/state%20machine%20diagram.png" title="" alt="" data-align="center">
 
 ### Sequence diagram:
 
 shows process interactions arranged in time sequence.
 
-<img src="file:///F:/8th%20Term/Software%20Engineering/term-project-g2/Documentation/Sequence%20diagram.png" title="" alt="" data-align="center">
+<img src="Documentation/Sequence%20diagram.png" title="" alt="" data-align="center">
 
 ### Activity diagram:
 
 graphical representations of workflows of stepwise activities and actions.
 
-![](F:\8th%20Term\Software%20Engineering\term-project-g2\Documentation\Activity%20diagram.png)
+![](Documentation\Activity%20diagram.png)
 
 ## Design description
 
