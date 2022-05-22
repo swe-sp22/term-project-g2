@@ -39,4 +39,6 @@ public class mainScreenController implements IControlledScreen {
 
     public void gotoEditMemberScreen(ActionEvent actionEvent) { mycontroller.setScreen(Main.editMemberScreenName);
     }
+    public void gotoEditEmployeeScreen(ActionEvent actionEvent) { mycontroller.setScreen(Main.editEmployeeScreenName);
+    }
 }

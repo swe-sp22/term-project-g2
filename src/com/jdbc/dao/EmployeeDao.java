@@ -1,6 +1,7 @@
 package com.jdbc.dao;
 
 import com.jdbc.model.Employee;
+import com.jdbc.model.Member;
 import com.jdbc.util.DatabaseConnection;
 
 import java.sql.*;
@@ -62,5 +63,44 @@ public class EmployeeDao {
         }
 
         return Integer.parseInt(employeesID.get(0));
+    }
+
+    public Employee getEmployee(int id) throws SQLException {
+        String query = "select * from employee where EID = ?";
+        PreparedStatement stmt = con.prepareStatement(query);
+        stmt.setInt(1,id);
+        //after getting the data , creates a new object from member class
+        ResultSet rs = stmt.executeQuery();
+        Employee employee = null;
+        //boolean check = false;
+        while (rs.next()) {
+            //check = true;
+            employee = new Employee();
+            employee.setEID(rs.getInt("EID"));
+            employee.setName(rs.getString("name"));
+            employee.setAddress(rs.getString("address"));
+            employee.setPhone_no(rs.getString("phone_no"));
+            employee.setDob(rs.getDate("dob").toLocalDate());
+            employee.setRole(rs.getString("role"));
+            employee.setSalary(rs.getString("salary"));
+        }
+        return employee;
+    }
+
+    public int update(Employee employee) throws SQLException {
+        //TODO
+        String query = "UPDATE employee\n" +
+                "SET name = ?,address = ?, phone_no= ?,dob = ?, role = ? ,salary = ? \n" +
+                "WHERE EID = ?";
+        PreparedStatement stmt = con.prepareStatement(query);
+        stmt.setString(1, employee.getName());
+        stmt.setString(2, employee.getAddress());
+        stmt.setString(3, employee.getPhone_no());
+        stmt.setDate(4, Date.valueOf(employee.getDob()));
+        stmt.setString(5, employee.getRole());
+        stmt.setString(6, employee.getSalary());
+        stmt.setString(7, Integer.toString(employee.getEID()));
+        return stmt.executeUpdate();
+
     }
 }

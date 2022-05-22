@@ -1,6 +1,8 @@
 package com.gui;
 
+import com.jdbc.dao.EmployeeDao;
 import com.jdbc.dao.MemberDaoImplementation;
+import com.jdbc.model.Employee;
 import com.jdbc.model.Member;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -12,7 +14,7 @@ import javafx.scene.control.TextField;
 import java.sql.SQLException;
 import java.sql.SQLIntegrityConstraintViolationException;
 
-public class editMember implements IControlledScreen {
+public class editEmployee implements IControlledScreen {
     @FXML
     private TextField searchText;
     @FXML
@@ -20,9 +22,11 @@ public class editMember implements IControlledScreen {
     @FXML
     private TextField phoneField;
     @FXML
-    private TextField MTField;
+    private TextField Role;
     @FXML
-    private TextField EID;
+    private TextField Salary;
+    @FXML
+    private TextField addressField;
     @FXML
     private DatePicker date;
     @FXML
@@ -40,7 +44,7 @@ public class editMember implements IControlledScreen {
 
 
     ScreensController mycontroller;
-    private Member member = null;
+    private Employee employee = null;
 
     public void setScreenParent(ScreensController screenParent){
         mycontroller = screenParent;
@@ -51,17 +55,18 @@ public class editMember implements IControlledScreen {
 
     @FXML
     public void searchMember(ActionEvent actionEvent) throws SQLException {
-        MemberDaoImplementation memberDao = new MemberDaoImplementation();
-        member = memberDao.getMember(Integer.parseInt(searchText.getText()));
-        if( member == null){
+        EmployeeDao employeedao = new EmployeeDao();
+        employee = employeedao.getEmployee(Integer.parseInt(searchText.getText()));
+        if( employee == null){
             //Member NOT FOUND
             MIDnotfound.setVisible(true);
 
             EditLabel.setVisible(false);
             nameField.setVisible(false);
+            addressField.setVisible(false);
             phoneField.setVisible(false);
-            MTField.setVisible(false);
-            EID.setVisible(false);
+            Role.setVisible(false);
+            Salary.setVisible(false);
             date.setVisible(false);
             saveMember.setVisible(false);
             savedsuccess.setVisible(false);
@@ -71,15 +76,17 @@ public class editMember implements IControlledScreen {
             MIDnotfound.setVisible(false);
             EditLabel.setVisible(true);
             nameField.setVisible(true);
-            nameField.setText(member.getName());
+            nameField.setText(employee.getName());
+            addressField.setVisible(true);
+            addressField.setText(employee.getAddress());
             phoneField.setVisible(true);
-            phoneField.setText(member.getPhone_no());
-            MTField.setVisible(true);
-            MTField.setText(Integer.toString(member.getMSID()));
-            EID.setVisible(true);
-            EID.setText(Integer.toString(member.getEID()));
+            phoneField.setText(employee.getPhone_no());
+            Role.setVisible(true);
+            Role.setText(employee.getRole());
+            Salary.setVisible(true);
+            Salary.setText(employee.getSalary());
             date.setVisible(true);
-            date.setValue(member.getDob());
+            date.setValue(employee.getDob());
             saveMember.setVisible(true);
             savedsuccess.setVisible(false);
             saveerror.setVisible(false);
@@ -90,13 +97,14 @@ public class editMember implements IControlledScreen {
 
     @FXML
     public void saveMember(ActionEvent actionEvent) throws SQLException {
-        MemberDaoImplementation memberDao = new MemberDaoImplementation();
+        EmployeeDao employeedao = new EmployeeDao();
         try {
-            member.setName(nameField.getText());
-            member.setPhone_no(phoneField.getText());
-            member.setDob(date.getValue());
-            member.setMSID(Integer.parseInt(MTField.getText()));
-            member.setEID(Integer.parseInt(EID.getText()));
+            employee.setName(nameField.getText());
+            employee.setAddress(addressField.getText());
+            employee.setPhone_no(phoneField.getText());
+            employee.setDob(date.getValue());
+            employee.setRole(Role.getText());
+            employee.setSalary(Salary.getText());
         }catch (NumberFormatException e){
             savedsuccess.setVisible(false);
             saveerror.setVisible(false);
@@ -104,7 +112,7 @@ public class editMember implements IControlledScreen {
         }
 
         try {
-            int f = memberDao.update(member);
+            int f = employeedao.update(employee);
             if(f == 1){
                 //Saved Successfully
                 emptyerror.setVisible(false);
@@ -122,6 +130,6 @@ public class editMember implements IControlledScreen {
             emptyerror.setVisible(true);
         }
 
-        }
+    }
 }
 
