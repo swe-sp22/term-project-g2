@@ -109,3 +109,133 @@ System is designed based on the assumptions that a wider variety of users may us
 ## Appendices:
 
 ![](F:\8th%20Term\Software%20Engineering\term-project-g2\Documentation\ERD.png)
+
+# Software process
+
+## Suggested software process:
+
+The software process suggested was an **incremental-agile** approach, where the specification, development and validation processes are interleaved.
+
+Why was this approach suggested:
+
+- Time was of the essence.
+
+- We wanted to release a working version in the shortest possible time.
+
+- Since we are a **group of 3** (Small team), **agile approach**was suitable.
+
+## Phases:
+
+The taken approach means that each successive version of the product is usable and each version adds some usabilitiy and functionality to the system.
+
+Phases used include:
+
+- Requirements.
+
+- Design.
+
+- Implementation.
+
+- Testing.
+
+With the constraint that there is no real customer and this project is more of a simulation a few assumptions were made and some constaints were added including:
+
+- Requirements was no modifeid a lot throughout the project because there was no customer at hand, so **requirements document** were written at the beginning of the project and has not changed much since then.
+
+- Testing was made on a subset of features not the system as a whole.
+
+- Since this is a management system, The ERD was the first diagram to be made and the most crucial one. It was highly utillized during the implementation phase. with specific requirements it also didn't change that much.
+
+# Architectural design
+
+## Suggested system architecture
+
+The system architecture suggested for this project was **client-server architecure.**
+
+Although this system is designed for a single computer the client-server architecture allows for future evolving of the project to be distributed accros a network and the ability to add several number of other clients (including phones).
+
+Reasons for using this architecture:
+
+- Better system evolving.
+
+- Efficiency in delivering resources to the client.
+
+- Since the system is centralized, it can be easily **secured and maintained**. althought a single point of failure is regarded as a disadvantage, it allows for easirer maintenance and with a system that is not crucial it can tolerate occasional failure.
+
+- More clients can be added whenever we desire.
+
+## Suggested application architecture
+
+The application architecture suggested and used for this project is **MVC**.
+
+With a highly interactive appilcation rose the necesity for the separation between the **GUI** and the **logic** of the application. facilitated by using a database and a client-server architecture, it was an easy to task to apply MVC to our project.
+
+# Design document
+
+This project is build using on a **Client-server Architecture** (discussed in the previous section).
+
+**OOP** was used in this project, since it's the most suitable for our application. which consists of: Member, employee, user and membership type.
+
+using **OOP** made it easier to model the database tables to our application using **ORM**(object relational model) and **DAO**(data access object). also made it possible to use **UML diagrams**to help in the design process.
+
+## Entity relationship diagram
+
+<img src="file:///F:/8th%20Term/Software%20Engineering/term-project-g2/Documentation/ERD.png" title="" alt="" data-align="center">
+
+## UML diagrams
+
+### use case diagram:
+
+A **use case diagram** is a graphical depiction of a user's possible interactions with a system. A use case diagram shows various use cases and different types of users the system has and will often be accompanied by other types of diagrams as well. The use cases are represented by either circles or ellipses. The actors are often shown as stick figures.
+
+<img src="file:///F:/8th%20Term/Software%20Engineering/term-project-g2/Documentation/Use%20Case%20Gym%20System.png" title="" alt="" data-align="center">
+
+### Class diagram:
+
+A type of static structure diagram that describes the structure of a system by showing the system's classes, their attributes, operations (or methods), and the relationships among objects.
+
+<img src="file:///F:/8th%20Term/Software%20Engineering/term-project-g2/Documentation/Class%20diagram.png" title="" alt="" data-align="center">
+
+### State machine diagram:
+
+models the behaviour of a single object.
+
+<img src="file:///F:/8th%20Term/Software%20Engineering/term-project-g2/Documentation/state%20machine%20diagram.png" title="" alt="" data-align="center">
+
+### Sequence diagram:
+
+shows process interactions arranged in time sequence.
+
+<img src="file:///F:/8th%20Term/Software%20Engineering/term-project-g2/Documentation/Sequence%20diagram.png" title="" alt="" data-align="center">
+
+### Activity diagram:
+
+graphical representations of workflows of stepwise activities and actions.
+
+![](F:\8th%20Term\Software%20Engineering\term-project-g2\Documentation\Activity%20diagram.png)
+
+## Design description
+
+With focuse on ease of use and good GUI the system was fairly system with system working as follow:
+
+1. Entering credentials in the login screen.
+
+2. Login screen transfers you to the main menu screen.
+
+3. In the main menu, several buttons exists with each button describing what it does.
+
+## Implementation
+
+enviroment and tools used by all the team:
+
+- [MySQL](https://www.mysql.com/) as a **relational database management system**.
+
+- [Java](https://www.java.com/en/https://www.java.com/en/) was the language of choice.
+
+- [IntelliJ IDEA]([IntelliJ IDEA: The Capable & Ergonomic Java IDE by JetBrains](https://www.jetbrains.com/idea/)) was used by the whole team for writing **Java** code.
+
+- **JDK 8.1.3** was used.
+
+- [Visual Studio Code](https://code.visualstudio.com/) was used for manipulating database **DDL**.
+
+> This document was supposed to be written according to the [IEEE 1016-2009]([1016-2009 - IEEE Standard for Information Technology--Systems Design--Software Design Descriptions | IEEE Standard | IEEE Xplore](https://ieeexplore.ieee.org/document/5167255)), but since it requires a paid access we haven't been able to follow its guidelines, so this a design document based on what we have studied.
