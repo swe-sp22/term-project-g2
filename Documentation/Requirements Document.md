@@ -92,7 +92,7 @@ We will use **server-client architecture**, server will contain the database and
 
 ### Non-functional requirements:
 
-1.  It shall take no longer than **three hours** for the user to learn the system and get to an average of **three misuses**per hour.
+1. It shall take no longer than **three hours** for the user to learn the system and get to an average of **three misuses**per hour.
 
 2. Credentials of the user should be encrypted.
 
@@ -106,6 +106,4 @@ System is designed based on the assumptions that a wider variety of users may us
 
 ## Appendices:
 
-> TODO: add database schema here for reference.
-
-
+<img title="" src="file:///F:/8th%20Term/Software%20Engineering/term-project-g2/Documentation/ERD.png" alt="" data-align="center">
