@@ -8,6 +8,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -30,6 +31,8 @@ public class showMembersController implements IControlledScreen {
     private TableColumn MT;
     @FXML
     private TableColumn TID;
+    @FXML
+    private Button deleteButton;
     ScreensController mycontroller;
 
     @FXML
@@ -44,7 +47,6 @@ public class showMembersController implements IControlledScreen {
         MT.setCellValueFactory(new PropertyValueFactory<>("MSID"));
         TID.setCellValueFactory(new PropertyValueFactory<>("EID"));
         memberTable.setItems(memberList);
-
     }
 
     public void setScreenParent(ScreensController screensController) {
@@ -53,5 +55,12 @@ public class showMembersController implements IControlledScreen {
 
     public void gotoMainScreen(ActionEvent actionEvent) {
         mycontroller.setScreen(Main.mainScreenName);
+    }
+
+    public void deleteMember(ActionEvent actionEvent) throws SQLException {
+        Member member = (Member) memberTable.getSelectionModel().getSelectedItem();
+        MemberDaoImplementation memberdao = new MemberDaoImplementation();
+        memberdao.delete(member.getMID());
+        System.out.println(member.getName() + "--> Deleted");
     }
 }

@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #222831;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.ShowEmployeeController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #222831;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.ShowEmployeeController">
    <children>
-      <VBox alignment="CENTER" prefHeight="1080.0" prefWidth="1920.0" spacing="60.0">
+      <VBox alignment="CENTER" layoutX="41.0" prefHeight="1080.0" prefWidth="1920.0" spacing="60.0">
          <children>
             <TableView fx:id="employees" prefHeight="874.0" prefWidth="1144.0" style="-fx-background-color: #EEEEEE; -fx-background-radius: 25; -fx-border-radius: 25;" tableMenuButtonVisible="true">
               <columns>
@@ -26,6 +23,11 @@
             <Button mnemonicParsing="false" onAction="#gotoMainScreen" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #D65A31; -fx-background-radius: 25;" text="Return" textAlignment="CENTER" textFill="#eeeeee">
                <font>
                   <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteEmployee" prefHeight="50.0" prefWidth="158.0" style="-fx-background-color: #D65A31; -fx-background-radius: 25;" text="Delete Selected" textAlignment="CENTER" textFill="#eeeeee">
+               <font>
+                  <Font name="System Bold" size="18.0" />
                </font>
             </Button>
          </children>

@@ -103,4 +103,10 @@ public class EmployeeDao {
         return stmt.executeUpdate();
 
     }
+    public void delete(int id) throws SQLException {
+        String query = "delete from employee where EID =?";
+        PreparedStatement stmt = con.prepareStatement(query);
+        stmt.setInt(1,id);
+        stmt.executeUpdate();
+    }
 }
