@@ -48,6 +48,14 @@ With focuse on ease of use and good GUI the system was fairly system with system
 
 enviroment and tools used by all the team: 
 
-- 
+- [MySQL](https://www.mysql.com/) as a **relational database management system**.
+
+- [Java](https://www.java.com/en/https://www.java.com/en/) was the language of choice.
+
+- [IntelliJ IDEA]([IntelliJ IDEA: The Capable & Ergonomic Java IDE by JetBrains](https://www.jetbrains.com/idea/)) was used by the whole team for writing **Java** code.
+
+- **JDK 8.1.3** was used. 
+
+- [Visual Studio Code](https://code.visualstudio.com/) was used for manipulating database **DDL**.
 
 > This document was supposed to be written according to the [IEEE 1016-2009]([1016-2009 - IEEE Standard for Information Technology--Systems Design--Software Design Descriptions | IEEE Standard | IEEE Xplore](https://ieeexplore.ieee.org/document/5167255)), but since it requires a paid access we haven't been able to follow its guidelines, so this a design document based on what we have studied.
