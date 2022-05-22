@@ -1,12 +1,10 @@
 package com.jdbc.dao;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.jdbc.model.Employee;
 import com.jdbc.model.Member;
 import com.jdbc.util.DatabaseConnection;
 //import com.jdbc.util.DatabaseConnection;
@@ -18,13 +16,14 @@ public class MemberDaoImplementation implements MemberDao {
 
     @Override
     public int add(Member member) throws SQLException {
-        String query = "insert into member(member_name, " + "member_address) VALUES (?, ?)";
-        //The performance of the application will be faster if we use PreparedStatement interface because query is compiled only once.
-        PreparedStatement stmt = con.prepareStatement(query);
-        //stmt.setString(1, member.getMember_name());
-        //stmt.setString(2, member.getMember_address());
-        int i = stmt.executeUpdate();  //i indicates number of changes made
-        return i;
+            String query = "insert into member(name,phone_no, dob,MSID , EID) values (?, ?, ?, ?, ?)";
+            PreparedStatement stmt = con.prepareStatement(query);
+            stmt.setString(1, member.getName());
+            stmt.setString(2, member.getPhone_no());
+            stmt.setDate(3, Date.valueOf(member.getDob()));
+            stmt.setString(4, Integer.toString(member.getMSID()));
+            stmt.setString(5, Integer.toString(member.getEID()));
+            return stmt.executeUpdate();
     }
 
     @Override
@@ -37,25 +36,24 @@ public class MemberDaoImplementation implements MemberDao {
 
     @Override
     public Member getMember(int id) throws SQLException {
-        String query = "select * from member where member_id = ?";
+        String query = "select * from member where MID = ?";
         PreparedStatement stmt = con.prepareStatement(query);
         stmt.setInt(1,id);
-        //Member member = new Member();  //after getting the data , creates a new object from member class
+         //after getting the data , creates a new object from member class
         ResultSet rs = stmt.executeQuery();
-        boolean check = false;
+        Member member = null;
+        //boolean check = false;
         while (rs.next()) {
-            check = true;
-            //member.setMember_id(rs.getInt("member_id"));
-            //member.setMember_name(rs.getString("member_name"));
-            //member.setMember_address(rs.getString("member_address"));
+            //check = true;
+            member = new Member();
+            member.setMID(rs.getInt("MID"));
+            member.setName(rs.getString("name"));
+            member.setPhone_no(rs.getString("phone_no"));
+            member.setDob(rs.getDate("dob").toLocalDate());
+            member.setMSID(rs.getInt("MSID"));
+            member.setEID(rs.getInt("EID"));
         }
-        if(check==true){
-          //  return member;
-        }
-        else{
-            return null;
-        }
-        return null;
+        return member;
     }
 
     @Override
@@ -63,24 +61,35 @@ public class MemberDaoImplementation implements MemberDao {
         String query = "select * from member";
         PreparedStatement stmt = con.prepareStatement(query);
         ResultSet rs = stmt.executeQuery();
-        List<Member> ls = new ArrayList();
-        while(rs.next()){
-           // Member member = new Member();
-            //member.setMember_id(rs.getInt("member_id"));
-            //member.setMember_name(rs.getString("member_name"));
-            //member.setMember_address(rs.getString("member_address"));
-           // ls.add(member);
+        List<Member> members = new ArrayList();
+        while (rs.next()){
+            Member member = new Member();
+            member.setMID(rs.getInt("MID"));
+            member.setName(rs.getString("name"));
+            member.setPhone_no(rs.getString("phone_no"));
+            member.setDob(rs.getDate("dob").toLocalDate());
+            member.setMSID(rs.getInt("MSID"));
+            member.setEID(rs.getInt("EID"));
+
+            members.add(member);
         }
-        return ls;
+        return members;
     }
 
     @Override
-    public void update(Member member) throws SQLException {
-        String query = "update member set member_name=?, " + " member_address= ? where member_id = ?";
+    public int update(Member member) throws SQLException {
+        //TODO
+        String query = "UPDATE member\n" +
+                "SET name = ?, phone_no= ?,dob = ?, MSID = ? ,EID = ? \n" +
+                "WHERE MID = ?";
         PreparedStatement stmt = con.prepareStatement(query);
-        //stmt.setString(1, member.getMember_name());
-        //stmt.setString(2, member.getMember_address());
-        //stmt.setInt(3, member.getMember_id());
-        //stmt.executeUpdate();
+        stmt.setString(1, member.getName());
+        stmt.setString(2, member.getPhone_no());
+        stmt.setDate(3, Date.valueOf(member.getDob()));
+        stmt.setString(4, Integer.toString(member.getMSID()));
+        stmt.setString(5, Integer.toString(member.getEID()));
+        stmt.setString(6, Integer.toString(member.getMID()));
+        return stmt.executeUpdate();
+
     }
 }

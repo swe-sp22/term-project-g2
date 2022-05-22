@@ -2,10 +2,10 @@ package com.jdbc.model;
 
 public class MembershipType {
     private int MSID;
-    private int duration;
+    private String duration;
     private float price;
 
-    public MembershipType(int duration, float price) {
+    public MembershipType(String duration, float price) {
         this.duration = duration;
         this.price = price;
     }
@@ -18,11 +18,11 @@ public class MembershipType {
         this.MSID = MSID;
     }
 
-    public int getDuration() {
+    public String getDuration() {
         return duration;
     }
 
-    public void setDuration(int duration) {
+    public void setDuration(String duration) {
         this.duration = duration;
     }
 

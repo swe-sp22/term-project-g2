@@ -17,20 +17,24 @@ public class Member {
 );*/
     private int MID;
     private String name;
-    private int phone_no;
+    private String phone_no;
     private LocalDate dob;
     private int MSID;
     private int EID;
 
     //! notice the empty constructor
 
-    public Member(String name, int phone_no, LocalDate dob, int MSID, int EID) {
+    public Member(String name, String phone_no, LocalDate dob, int MSID, int EID) {
         this.name = name;
         this.phone_no = phone_no;
         this.dob = dob;
         this.MSID = MSID;
         this.EID = EID;
     }
+
+    public Member() {
+    }
+
 
     public int getMID() {
         return MID;
@@ -48,11 +52,11 @@ public class Member {
         this.name = name;
     }
 
-    public int getPhone_no() {
+    public String getPhone_no() {
         return phone_no;
     }
 
-    public void setPhone_no(int phone_no) {
+    public void setPhone_no(String phone_no) {
         this.phone_no = phone_no;
     }
 

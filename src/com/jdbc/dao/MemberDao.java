@@ -13,6 +13,6 @@ public interface MemberDao {
             throws SQLException;
     public List<Member> getMembers()
             throws SQLException;
-    public void update(Member member)
+    public int update(Member member)
             throws SQLException;
 }
