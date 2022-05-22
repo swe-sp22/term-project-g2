@@ -3,18 +3,7 @@ package com.jdbc.model;
 import java.time.LocalDate;
 
 public class Member {
-    /*
-    * create table if not exists `Member`(
-    `MID` int auto_increment,
-    name varchar(256) not null,
-    phone_no int not null,
-    dob DATE not null,
-    MSID int,
-    EID int,
-    primary key (MID),
-    foreign key (MSID) references `Membership type`(MSID),
-    foreign key (EID) references Employee(EID)
-);*/
+
     private int MID;
     private String name;
     private String phone_no;
