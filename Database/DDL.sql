@@ -25,7 +25,7 @@ create table if not exists `Member`(
 
 create table if not exists `Membership type`(
     MSID int auto_increment,
-    duration int not null,
+    duration varchar(256) not null,
     price float not null,
     primary key (MSID)
 );

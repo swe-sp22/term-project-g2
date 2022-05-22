@@ -39,4 +39,28 @@ public class EmployeeDao {
         }
         return employees;
     }
+
+    public List<String> getAllEmployeesNames() throws SQLException{
+        String query = "select * from employee";
+        PreparedStatement stmt = con.prepareStatement(query);
+        ResultSet rs = stmt.executeQuery();
+        List<String> employeesNames = new ArrayList();
+        while (rs.next()){
+            employeesNames.add(rs.getString("name"));
+        }
+        return employeesNames;
+    }
+
+    public int getEmployeeId(String EName) throws SQLException{
+        String query = "select EID from employee where name = ? ";
+        PreparedStatement stmt = con.prepareStatement(query);
+        stmt.setString(1, EName);
+        ResultSet rs = stmt.executeQuery();
+        List<String> employeesID = new ArrayList();
+        while (rs.next()){
+            employeesID.add(rs.getString("EID"));
+        }
+
+        return Integer.parseInt(employeesID.get(0));
+    }
 }
