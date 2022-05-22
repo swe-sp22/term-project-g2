@@ -1,12 +1,15 @@
 package com.gui;
 
 import com.jdbc.dao.EmployeeDao;
+import com.jdbc.dao.MemberDaoImplementation;
 import com.jdbc.model.Employee;
+import com.jdbc.model.Member;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -41,6 +44,8 @@ public class ShowEmployeeController implements IControlledScreen, Initializable 
 
     @FXML
     private TableColumn<Employee, String> phone_no;
+    @FXML
+    private Button deleteButton;
 
     ScreensController mycontroller;
 
@@ -78,6 +83,13 @@ public class ShowEmployeeController implements IControlledScreen, Initializable 
         System.out.println(employeeObservableList);
         System.out.println("here");
         employees.setItems(employeeObservableList);
+    }
+
+    public void deleteEmployee(ActionEvent actionEvent) throws SQLException {
+        Employee employee = (Employee) employees.getSelectionModel().getSelectedItem();
+        EmployeeDao employeeDao = new EmployeeDao();
+        employeeDao.delete(employee.getEID());
+        System.out.println(employee.getName() + "--> Deleted");
     }
 
 }

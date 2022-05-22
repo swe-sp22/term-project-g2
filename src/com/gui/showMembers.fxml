@@ -7,7 +7,7 @@
 
 <AnchorPane prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.showMembersController">
    <children>
-      <Button fx:id="cancelShowMembers" layoutX="897.0" layoutY="888.0" mnemonicParsing="false" onAction="#gotoMainScreen" prefHeight="36.0" prefWidth="125.0" style="-fx-background-color: #D65A31;" text="Cancel" textFill="WHITE">
+      <Button fx:id="cancelShowMembers" layoutX="973.0" layoutY="887.0" mnemonicParsing="false" onAction="#gotoMainScreen" prefHeight="36.0" prefWidth="125.0" style="-fx-background-color: #D65A31;" text="Cancel" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
@@ -27,5 +27,6 @@
             <Font name="System Bold" size="48.0" />
          </font>
       </Label>
+      <Button fx:id="deleteButton" layoutX="789.0" layoutY="887.0" mnemonicParsing="false" onAction="#deleteMember" prefHeight="36.0" prefWidth="126.0" style="-fx-background-color: #D65A31;" text="Delete Selected" textFill="WHITE" />
    </children>
 </AnchorPane>

@@ -28,7 +28,7 @@ public class MemberDaoImplementation implements MemberDao {
 
     @Override
     public void delete(int id) throws SQLException {
-        String query = "delete from member where member_id =?";
+        String query = "delete from member where MID =?";
         PreparedStatement stmt = con.prepareStatement(query);
         stmt.setInt(1,id);
         stmt.executeUpdate();
