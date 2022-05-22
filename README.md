@@ -212,7 +212,7 @@ shows process interactions arranged in time sequence.
 
 graphical representations of workflows of stepwise activities and actions.
 
-![](Documentation\Activity%20diagram.png)
+<img src="Documentation\Activity%20diagram.png" title="" alt="" data-align="center">
 
 ## Design description
 
