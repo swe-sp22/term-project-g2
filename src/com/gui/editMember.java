@@ -106,9 +106,11 @@ public class editMember implements IControlledScreen {
         try {
             int f = memberDao.update(member);
             if(f == 1){
+                //Saved Successfully
                 emptyerror.setVisible(false);
                 saveerror.setVisible(false);
                 savedsuccess.setVisible(true);
+
             }
         }catch (SQLIntegrityConstraintViolationException e) {
             emptyerror.setVisible(false);
