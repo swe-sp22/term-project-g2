@@ -6,18 +6,18 @@
 
 <BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.mainScreenController">
    <top>
-      <Pane prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #000000;" BorderPane.alignment="CENTER">
+      <Pane prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #000000; -fx-background-image: url('/com/images/1.jpg'); -fx-background-size: cover;" BorderPane.alignment="CENTER">
          <children>
             <Label layoutX="891.0" layoutY="24.0" text="Welcome Manager!" textFill="WHITE" />
-            <Button fx:id="addMember" layoutX="181.0" layoutY="75.0" mnemonicParsing="false" onAction="#gotoAddMemberScreen" prefHeight="163.0" prefWidth="189.0" style="-fx-background-color: #D65A31;" text="Add Member" textFill="WHITE">
+            <Button fx:id="addMember" layoutX="500.0" layoutY="75.0" mnemonicParsing="false" onAction="#gotoAddMemberScreen" prefHeight="163.0" prefWidth="189.0" style="-fx-background-color: #D65A31;" text="Add Member" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
-            <Button fx:id="editMember" layoutX="180.0" layoutY="456.0" mnemonicParsing="false" onAction="#gotoEditMemberScreen" prefHeight="169.0" prefWidth="191.0" style="-fx-background-color: #D65A31;" text="Edit Member" textFill="WHITE">
+            <Button fx:id="editMember" layoutX="500.0" layoutY="456.0" mnemonicParsing="false" onAction="#gotoEditMemberScreen" prefHeight="169.0" prefWidth="191.0" style="-fx-background-color: #D65A31;" text="Edit Member" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
-            <Button fx:id="showMembers" layoutX="179.0" layoutY="814.0" mnemonicParsing="false" onAction="#gotoShowMembers" prefHeight="170.0" prefWidth="193.0" style="-fx-background-color: #D65A31;" text="Show All Members" textFill="WHITE">
+            <Button fx:id="showMembers" layoutX="500.0" layoutY="814.0" mnemonicParsing="false" onAction="#gotoShowMembers" prefHeight="170.0" prefWidth="193.0" style="-fx-background-color: #D65A31;" text="Show All Members" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
@@ -25,22 +25,22 @@
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
-            <Button fx:id="showMembers1" layoutX="730.0" layoutY="450.0" mnemonicParsing="false" prefHeight="182.0" prefWidth="452.0" style="-fx-background-color: #D65A31;" text="Create new membership" textFill="WHITE">
+            <Button fx:id="showMembers1" layoutX="730.0" layoutY="450.0" mnemonicParsing="false" prefHeight="182.0" prefWidth="452.0" style="-fx-background-color: #D65A31;" text="Create new membership" textFill="WHITE" visible="false">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="addEmployee" layoutX="1563.0" layoutY="75.0" mnemonicParsing="false" onAction="#gotoAddEmployeeScreen" prefHeight="163.0" prefWidth="189.0" style="-fx-background-color: #D65A31;" text="Add Employee" textFill="WHITE">
+            <Button fx:id="addEmployee" layoutX="1200.0" layoutY="75.0" mnemonicParsing="false" onAction="#gotoAddEmployeeScreen" prefHeight="163.0" prefWidth="189.0" style="-fx-background-color: #D65A31;" text="Add Employee" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="editEmployee" layoutX="1553.0" layoutY="457.0" mnemonicParsing="false" onAction="#gotoEditEmployeeScreen" prefHeight="169.0" prefWidth="191.0" style="-fx-background-color: #D65A31;" text="Edit Employee" textFill="WHITE">
+            <Button fx:id="editEmployee" layoutX="1200.0" layoutY="457.0" mnemonicParsing="false" onAction="#gotoEditEmployeeScreen" prefHeight="169.0" prefWidth="191.0" style="-fx-background-color: #D65A31;" text="Edit Employee" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="showEmployees" layoutX="1552.0" layoutY="814.0" mnemonicParsing="false" onAction="#gotoShowEmployees" prefHeight="170.0" prefWidth="193.0" style="-fx-background-color: #D65A31;" text="Show All Employees" textFill="WHITE">
+            <Button fx:id="showEmployees" layoutX="1200.0" layoutY="814.0" mnemonicParsing="false" onAction="#gotoShowEmployees" prefHeight="170.0" prefWidth="193.0" style="-fx-background-color: #D65A31;" text="Show All Employees" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>

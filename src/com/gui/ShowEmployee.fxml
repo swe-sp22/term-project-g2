@@ -5,9 +5,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #222831;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.ShowEmployeeController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #222831;-fx-background-image: url('/com/images/2.jpg'); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.ShowEmployeeController">
    <children>
-      <VBox alignment="CENTER" layoutX="41.0" prefHeight="1080.0" prefWidth="1920.0" spacing="60.0">
+      <VBox alignment="CENTER" layoutX="41.0" prefHeight="1080.0" prefWidth="1920.0" spacing="60.0" style="-fx-background-image: url('/com/images/2.jpg'); -fx-background-size: cover;">
          <children>
             <TableView fx:id="employees" prefHeight="874.0" prefWidth="1144.0" style="-fx-background-color: #EEEEEE; -fx-background-radius: 25; -fx-border-radius: 25;" tableMenuButtonVisible="true">
               <columns>
