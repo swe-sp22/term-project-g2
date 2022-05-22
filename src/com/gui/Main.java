@@ -24,6 +24,8 @@ public class Main extends Application {
     public static String addEmployeeScreenFile = "AddEmployee.fxml";
     public static String editMemberScreenName = "editMember";
     public static String editMemberScreenFile = "editMember.fxml";
+    public static String showEmployeeScreenName = "showEmployee";
+    public static String showEmployeeScreenFile = "showEmployee.fxml";
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -34,7 +36,7 @@ public class Main extends Application {
         mainContainer.loadScreen(Main.showMembersScreenName,Main.showMembersScreenFile);
         mainContainer.loadScreen(Main.addEmployeeScreenName,Main.addEmployeeScreenFile);
         mainContainer.loadScreen(Main.editMemberScreenName,Main.editMemberScreenFile);
-
+        mainContainer.loadScreen(Main.showEmployeeScreenName,Main.showEmployeeScreenFile);
         mainContainer.setScreen(Main.loginScreenName);
 
         Group root = new Group();
