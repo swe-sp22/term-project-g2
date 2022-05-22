@@ -26,6 +26,10 @@ A type of static structure diagram that describes the structure of a system by s
 
 ### State machine diagram:
 
+models the behaviour of a single object.
+
+<img src="file:///F:/8th%20Term/Software%20Engineering/term-project-g2/Documentation/state%20machine%20diagram.png" title="" alt="" data-align="center">
+
 ### Sequence diagram:
 
 shows process interactions arranged in time sequence.
