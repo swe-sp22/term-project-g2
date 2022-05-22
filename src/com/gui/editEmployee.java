@@ -118,6 +118,8 @@ public class editEmployee implements IControlledScreen {
                 emptyerror.setVisible(false);
                 saveerror.setVisible(false);
                 savedsuccess.setVisible(true);
+                mycontroller.unloadScreen(Main.showEmployeeScreenName);
+                mycontroller.loadScreen(Main.showEmployeeScreenName, Main.showEmployeeScreenFile);
 
             }
         }catch (SQLIntegrityConstraintViolationException e) {

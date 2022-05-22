@@ -62,9 +62,12 @@ public class addMemberController implements IControlledScreen {
         Member newMember = new Member(addMemberName.getText(), addMemberPhone.getText(),addMemberDOB.getValue(), MTID, EID);
 
         int value = memberdao.add(newMember);
+        mycontroller.unloadScreen(Main.showMembersScreenName);
+        mycontroller.loadScreen(Main.showMembersScreenName, Main.showMembersScreenFile);
         System.out.println(value);
         if (value == 1){
             Success.setVisible(true);
+
         }else {
             Error.setVisible(true);
         }

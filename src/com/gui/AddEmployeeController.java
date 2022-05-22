@@ -37,9 +37,11 @@ public class AddEmployeeController implements IControlledScreen {
         Employee newEmployee = new Employee(name.getText(), address.getText(), phone_no.getText(), dob.getValue(), role.getText(), salary.getText());
         EmployeeDao employeeDao = new EmployeeDao();
         int value = employeeDao.addEmployee(newEmployee);
+        mycontroller.unloadScreen(Main.showEmployeeScreenName);
+        mycontroller.loadScreen(Main.showEmployeeScreenName, Main.showEmployeeScreenFile);
         System.out.println(value);
-
-
+        mycontroller.unloadScreen(Main.showEmployeeScreenName);
+        mycontroller.loadScreen(Main.showEmployeeScreenName,Main.showEmployeeScreenFile);
     }
     public void gotoMainScreen(ActionEvent actionEvent) {
         mycontroller.setScreen(Main.mainScreenName);

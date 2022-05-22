@@ -36,7 +36,7 @@ public class MemberDaoImplementation implements MemberDao {
 
     @Override
     public Member getMember(int id) throws SQLException {
-        String query = "select * from member where MID = ?";
+        String query = "select * from member join `membership type` where MID = ?";
         PreparedStatement stmt = con.prepareStatement(query);
         stmt.setInt(1,id);
          //after getting the data , creates a new object from member class

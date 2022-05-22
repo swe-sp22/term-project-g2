@@ -38,7 +38,7 @@
         <TextField fx:id="Role" layoutX="816.0" layoutY="714.0" prefHeight="43.0" prefWidth="307.0" promptText="Role" visible="false" />
         <TextField fx:id="Salary" layoutX="816.0" layoutY="785.0" prefHeight="43.0" prefWidth="307.0" promptText="Salary" visible="false" />
         <DatePicker fx:id="date" layoutX="816.0" layoutY="645.0" prefHeight="43.0" prefWidth="307.0" promptText="Date Of Birth" visible="false" />
-        <Label fx:id="MIDnotfound" layoutX="734.0" layoutY="370.0" text="Member ID NOT FOUND" textFill="#ff0101" visible="false">
+        <Label fx:id="MIDnotfound" layoutX="734.0" layoutY="370.0" text="Employee ID NOT FOUND" textFill="#ff0101" visible="false">
             <font>
                 <Font name="System Bold" size="36.0" />
             </font>

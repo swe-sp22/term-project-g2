@@ -21,6 +21,7 @@ public class Member {
     private LocalDate dob;
     private int MSID;
     private int EID;
+    private String MembershipDuration;
 
     //! notice the empty constructor
 
@@ -82,5 +83,13 @@ public class Member {
 
     public void setEID(int EID) {
         this.EID = EID;
+    }
+
+    public String getMembershipDuration() {
+        return MembershipDuration;
+    }
+
+    public void setMembershipDuration(String MembershipDuration) {
+        this.MembershipDuration = MembershipDuration;
     }
 }

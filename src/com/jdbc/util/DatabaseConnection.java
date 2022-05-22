@@ -12,7 +12,7 @@ public class DatabaseConnection {
     {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Gym", "root", "");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/gym", "root", "");
             System.out.println("remeber to check for correct DDL");
         }
         catch (ClassNotFoundException | SQLException e) {
