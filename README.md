@@ -180,7 +180,7 @@ using **OOP** made it easier to model the database tables to our application usi
 
 ## Entity relationship diagram
 
-<img src="file:///F:/8th%20Term/Software%20Engineering/term-project-g2/Documentation/ERD.png" title="" alt="" data-align="center">
+<img src="Documentation/ERD.png" title="" alt="" data-align="center">
 
 ## UML diagrams
 
