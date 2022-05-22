@@ -20,6 +20,10 @@ A **use case diagram** is a graphical depiction of a user's possible interaction
 
 ### Class diagram:
 
+A type of static structure diagram that describes the structure of a system by showing the system's classes, their attributes, operations (or methods), and the relationships among objects.
+
+<img src="file:///F:/8th%20Term/Software%20Engineering/term-project-g2/Documentation/Class%20diagram.png" title="" alt="" data-align="center">
+
 ### State machine diagram:
 
 ### Sequence diagram:
