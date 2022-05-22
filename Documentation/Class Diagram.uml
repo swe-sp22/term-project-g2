@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/Users/msall/IdeaProjects/term-project-g2</OriginalElement>
+  <nodes>
+    <node x="684.2944444444449" y="1266.5">com.jdbc.dao.EmployeeDaoTest</node>
+    <node x="2935.1829861111114" y="1255.5">com.jdbc.dao.MemberDaoImplementationTest</node>
+    <node x="3128.9329861111114" y="544.0">com.jdbc.model.MemberTest</node>
+    <node x="1227.8361111111114" y="1211.0">com.gui.mainScreenController</node>
+    <node x="0.0" y="1623.0">com.jdbc.model.MembershipType</node>
+    <node x="2795.1694444444447" y="576.5">com.jdbc.dao.MemberDaoImplementation</node>
+    <node x="1775.224652777778" y="510.5">com.gui.addMemberController</node>
+    <node x="939.4611111111114" y="1200.0">com.gui.AddEmployeeController</node>
+    <node x="1265.93125" y="0.0">com.gui.IControlledScreen</node>
+    <node x="167.01631944444443" y="543.5">com.gui.LoginController</node>
+    <node x="2091.8642361111115" y="621.0">com.jdbc.dao.UserDao</node>
+    <node x="942.5562500000002" y="554.5">com.jdbc.dao.EmployeeDao</node>
+    <node x="1369.1531249999998" y="131.5">com.gui.ScreensController</node>
+    <node x="1584.6829861111112" y="1112.0">com.gui.editMember</node>
+    <node x="3308.9329861111114" y="599.5">com.jdbc.dao.MemberDao</node>
+    <node x="1464.9031249999998" y="445.0">com.gui.Main</node>
+    <node x="2039.224652777778" y="165.0">com.jdbc.model.User</node>
+    <node x="2211.224652777778" y="175.5">com.jdbc.util.DatabaseConnection</node>
+    <node x="423.6975694444445" y="1101.0">com.gui.editEmployee</node>
+    <node x="0.0" y="1145.0">com.gui.ShowEmployeeController</node>
+    <node x="2257.099652777778" y="1167.0">com.gui.showMembersController</node>
+    <node x="3045.5145833333336" y="110.0">com.jdbc.model.Member</node>
+    <node x="2597.7645833333336" y="1233.5">com.jdbc.dao.MembershipTypeDaoTest</node>
+    <node x="2548.1694444444447" y="609.5">com.jdbc.dao.MembershipTypeDao</node>
+    <node x="249.19479166666633" y="110.0">com.jdbc.model.Employee</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.gui.editMember" target="com.gui.Main" relationship="DEPENDENCY">
+      <point x="-97.91666666666674" y="-227.5" />
+      <point x="1604.2663194444444" y="1070.0" />
+      <point x="1323.5861111111114" y="1070.0" />
+      <point x="1323.5861111111114" y="950.0" />
+      <point x="1580.9031249999998" y="950.0" />
+      <point x="0.0" y="227.0" />
+    </edge>
+    <edge source="com.gui.editMember" target="com.gui.ScreensController" relationship="DEPENDENCY">
+      <point x="-19.583333333333258" y="-227.5" />
+      <point x="1682.599652777778" y="990.0" />
+      <point x="1729.4031249999998" y="990.0" />
+      <point x="1729.4031249999998" y="404.0" />
+      <point x="1635.1142361111113" y="404.0" />
+      <point x="1635.1142361111113" y="384.0" />
+      <point x="1543.1531249999998" y="384.0" />
+      <point x="58.0" y="95.0" />
+    </edge>
+    <edge source="com.gui.AddEmployeeController" target="com.gui.Main" relationship="DEPENDENCY">
+      <point x="104.58333333333348" y="-139.5" />
+      <point x="1169.544444444445" y="1070.0" />
+      <point x="1323.5861111111114" y="1070.0" />
+      <point x="1323.5861111111114" y="950.0" />
+      <point x="1580.9031249999998" y="950.0" />
+      <point x="0.0" y="227.0" />
+    </edge>
+    <edge source="com.jdbc.dao.EmployeeDao" target="com.jdbc.util.DatabaseConnection" relationship="DEPENDENCY">
+      <point x="56.25" y="-117.5" />
+      <point x="1111.30625" y="394.0" />
+      <point x="2303.224652777778" y="394.0" />
+      <point x="0.0" y="51.0" />
+    </edge>
+    <edge source="com.gui.addMemberController" target="com.gui.ScreensController" relationship="TO_ONE">
+      <point x="-60.75" y="-161.5" />
+      <point x="1835.974652777778" y="414.0" />
+      <point x="1405.4031249999998" y="414.0" />
+      <point x="1405.4031249999998" y="384.0" />
+      <point x="1427.1531249999998" y="384.0" />
+      <point x="-58.0" y="95.0" />
+    </edge>
+    <edge source="com.gui.editMember" target="com.gui.IControlledScreen" relationship="REALIZATION">
+      <point x="19.583333333333258" y="-227.5" />
+      <point x="1721.7663194444444" y="1010.0" />
+      <point x="2028.724652777778" y="1010.0" />
+      <point x="2028.724652777778" y="88.0" />
+      <point x="1372.43125" y="88.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.jdbc.dao.UserDao" target="com.jdbc.util.DatabaseConnection" relationship="DEPENDENCY">
+      <point x="65.25" y="-51.0" />
+      <point x="2287.6142361111115" y="394.0" />
+      <point x="2303.224652777778" y="394.0" />
+      <point x="0.0" y="51.0" />
+    </edge>
+    <edge source="com.gui.LoginController" target="com.gui.IControlledScreen" relationship="REALIZATION">
+      <point x="-58.75" y="-128.5" />
+      <point x="225.76631944444443" y="88.0" />
+      <point x="1372.43125" y="88.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.gui.AddEmployeeController" target="com.gui.ScreensController" relationship="DEPENDENCY">
+      <point x="62.75" y="-139.5" />
+      <point x="1127.7111111111114" y="970.0" />
+      <point x="1423.3642361111113" y="970.0" />
+      <point x="1423.3642361111113" y="404.0" />
+      <point x="1635.1142361111113" y="404.0" />
+      <point x="1635.1142361111113" y="384.0" />
+      <point x="1543.1531249999998" y="384.0" />
+      <point x="58.0" y="95.0" />
+    </edge>
+    <edge source="com.jdbc.dao.MemberDaoImplementationTest" target="com.jdbc.model.Member" relationship="TO_ONE">
+      <point x="44.5" y="-84.0" />
+      <point x="3157.6829861111114" y="1080.0" />
+      <point x="3118.4329861111114" y="1080.0" />
+      <point x="3118.4329861111114" y="384.0" />
+      <point x="3063.9194444444447" y="384.0" />
+      <point x="3063.9194444444447" y="364.0" />
+      <point x="3113.2645833333336" y="364.0" />
+      <point x="-67.75" y="116.5" />
+    </edge>
+    <edge source="com.jdbc.dao.EmployeeDaoTest" target="com.jdbc.dao.EmployeeDao" relationship="TO_ONE">
+      <point x="52.75" y="-73.0" />
+      <point x="842.5444444444449" y="950.0" />
+      <point x="1111.30625" y="950.0" />
+      <point x="56.25" y="117.5" />
+    </edge>
+    <edge source="com.jdbc.dao.MemberDaoImplementationTest" target="com.jdbc.dao.MemberDaoImplementation" relationship="TO_ONE">
+      <point x="-44.5" y="-84.0" />
+      <point x="3068.6829861111114" y="1050.0" />
+      <point x="2969.9194444444447" y="1050.0" />
+      <point x="58.25" y="95.5" />
+    </edge>
+    <edge source="com.gui.ShowEmployeeController" target="com.jdbc.model.Employee" relationship="TO_ONE">
+      <point x="-80.0" y="-194.5" />
+      <point x="60.0" y="1080.0" />
+      <point x="28.61423611111104" y="1080.0" />
+      <point x="28.61423611111104" y="424.0" />
+      <point x="50.61423611111104" y="424.0" />
+      <point x="50.61423611111104" y="404.0" />
+      <point x="336.94479166666633" y="404.0" />
+      <point x="-87.75" y="116.5" />
+    </edge>
+    <edge source="com.gui.editEmployee" target="com.jdbc.dao.EmployeeDao" relationship="CREATE">
+      <point x="58.75" y="-238.5" />
+      <point x="599.9475694444445" y="1080.0" />
+      <point x="784.7944444444449" y="1080.0" />
+      <point x="784.7944444444449" y="920.0" />
+      <point x="998.8062500000002" y="920.0" />
+      <point x="-56.25" y="117.5" />
+    </edge>
+    <edge source="com.gui.editMember" target="com.jdbc.dao.MemberDaoImplementation" relationship="CREATE">
+      <point x="97.91666666666674" y="-227.5" />
+      <point x="1800.099652777778" y="1060.0" />
+      <point x="2671.655902777778" y="1060.0" />
+      <point x="2671.655902777778" y="1040.0" />
+      <point x="2853.4194444444447" y="1040.0" />
+      <point x="-58.25" y="95.5" />
+    </edge>
+    <edge source="com.gui.AddEmployeeController" target="com.gui.IControlledScreen" relationship="REALIZATION">
+      <point x="-20.916666666666742" y="-139.5" />
+      <point x="1044.0444444444447" y="930.0" />
+      <point x="932.0562500000002" y="930.0" />
+      <point x="932.0562500000002" y="88.0" />
+      <point x="1372.43125" y="88.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.gui.IControlledScreen" target="com.gui.ScreensController" relationship="DEPENDENCY">
+      <point x="71.0" y="28.0" />
+      <point x="1443.43125" y="78.0" />
+      <point x="1543.1531249999998" y="78.0" />
+      <point x="58.0" y="-95.0" />
+    </edge>
+    <edge source="com.gui.ScreensController" target="com.gui.IControlledScreen" relationship="DEPENDENCY">
+      <point x="-58.0" y="-95.0" />
+      <point x="1427.1531249999998" y="78.0" />
+      <point x="1301.43125" y="78.0" />
+      <point x="-71.0" y="28.0" />
+    </edge>
+    <edge source="com.gui.editMember" target="com.jdbc.model.Member" relationship="TO_ONE">
+      <point x="58.75" y="-227.5" />
+      <point x="1760.9329861111112" y="1020.0" />
+      <point x="2365.7392361111115" y="1020.0" />
+      <point x="2365.7392361111115" y="384.0" />
+      <point x="3063.9194444444447" y="384.0" />
+      <point x="3063.9194444444447" y="364.0" />
+      <point x="3113.2645833333336" y="364.0" />
+      <point x="-67.75" y="116.5" />
+    </edge>
+    <edge source="com.gui.AddEmployeeController" target="com.jdbc.dao.EmployeeDao" relationship="CREATE">
+      <point x="-104.58333333333326" y="-139.5" />
+      <point x="960.3777777777782" y="1080.0" />
+      <point x="784.7944444444449" y="1080.0" />
+      <point x="784.7944444444449" y="920.0" />
+      <point x="998.8062500000002" y="920.0" />
+      <point x="-56.25" y="117.5" />
+    </edge>
+    <edge source="com.gui.ShowEmployeeController" target="com.gui.ScreensController" relationship="TO_ONE">
+      <point x="0.0" y="-194.5" />
+      <point x="140.0" y="1080.0" />
+      <point x="156.51631944444443" y="1080.0" />
+      <point x="156.51631944444443" y="414.0" />
+      <point x="1405.4031249999998" y="414.0" />
+      <point x="1405.4031249999998" y="384.0" />
+      <point x="1427.1531249999998" y="384.0" />
+      <point x="-58.0" y="95.0" />
+    </edge>
+    <edge source="com.jdbc.dao.MemberDaoImplementation" target="com.jdbc.util.DatabaseConnection" relationship="DEPENDENCY">
+      <point x="-58.25" y="-95.5" />
+      <point x="2853.4194444444447" y="394.0" />
+      <point x="2303.224652777778" y="394.0" />
+      <point x="0.0" y="51.0" />
+    </edge>
+    <edge source="com.gui.editEmployee" target="com.gui.Main" relationship="DEPENDENCY">
+      <point x="97.91666666666652" y="-238.5" />
+      <point x="639.114236111111" y="1070.0" />
+      <point x="1323.5861111111114" y="1070.0" />
+      <point x="1323.5861111111114" y="950.0" />
+      <point x="1580.9031249999998" y="950.0" />
+      <point x="0.0" y="227.0" />
+    </edge>
+    <edge source="com.jdbc.dao.EmployeeDao" target="com.jdbc.model.Employee" relationship="CREATE">
+      <point x="-56.25" y="-117.5" />
+      <point x="998.8062500000002" y="424.0" />
+      <point x="878.2781249999999" y="424.0" />
+      <point x="878.2781249999999" y="394.0" />
+      <point x="512.4447916666663" y="394.0" />
+      <point x="87.75" y="116.5" />
+    </edge>
+    <edge source="com.gui.mainScreenController" target="com.gui.Main" relationship="DEPENDENCY">
+      <point x="-106.5" y="-128.5" />
+      <point x="1263.3361111111114" y="1070.0" />
+      <point x="1323.5861111111114" y="1070.0" />
+      <point x="1323.5861111111114" y="950.0" />
+      <point x="1580.9031249999998" y="950.0" />
+      <point x="0.0" y="227.0" />
+    </edge>
+    <edge source="com.gui.editEmployee" target="com.jdbc.model.Employee" relationship="TO_ONE">
+      <point x="-97.91666666666652" y="-238.5" />
+      <point x="443.280902777778" y="1020.0" />
+      <point x="134.51631944444443" y="1020.0" />
+      <point x="134.51631944444443" y="424.0" />
+      <point x="50.61423611111104" y="424.0" />
+      <point x="50.61423611111104" y="404.0" />
+      <point x="336.94479166666633" y="404.0" />
+      <point x="-87.75" y="116.5" />
+    </edge>
+    <edge source="com.gui.addMemberController" target="com.gui.IControlledScreen" relationship="REALIZATION">
+      <point x="60.75" y="-161.5" />
+      <point x="1957.474652777778" y="88.0" />
+      <point x="1372.43125" y="88.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.gui.showMembersController" target="com.jdbc.dao.MemberDaoImplementation" relationship="CREATE">
+      <point x="97.91666666666663" y="-172.5" />
+      <point x="2472.516319444445" y="1060.0" />
+      <point x="2671.655902777778" y="1060.0" />
+      <point x="2671.655902777778" y="1040.0" />
+      <point x="2853.4194444444447" y="1040.0" />
+      <point x="-58.25" y="95.5" />
+    </edge>
+    <edge source="com.gui.mainScreenController" target="com.gui.ScreensController" relationship="DEPENDENCY">
+      <point x="35.5" y="-128.5" />
+      <point x="1405.3361111111114" y="980.0" />
+      <point x="1707.4031249999998" y="980.0" />
+      <point x="1707.4031249999998" y="404.0" />
+      <point x="1635.1142361111113" y="404.0" />
+      <point x="1635.1142361111113" y="384.0" />
+      <point x="1543.1531249999998" y="384.0" />
+      <point x="58.0" y="95.0" />
+    </edge>
+    <edge source="com.gui.ShowEmployeeController" target="com.jdbc.dao.EmployeeDao" relationship="CREATE">
+      <point x="80.0" y="-194.5" />
+      <point x="220.0" y="1080.0" />
+      <point x="784.7944444444449" y="1080.0" />
+      <point x="784.7944444444449" y="920.0" />
+      <point x="998.8062500000002" y="920.0" />
+      <point x="-56.25" y="117.5" />
+    </edge>
+    <edge source="com.jdbc.dao.MembershipTypeDao" target="com.jdbc.util.DatabaseConnection" relationship="DEPENDENCY">
+      <point x="0.0" y="-62.5" />
+      <point x="2661.6694444444447" y="394.0" />
+      <point x="2303.224652777778" y="394.0" />
+      <point x="0.0" y="51.0" />
+    </edge>
+    <edge source="com.gui.showMembersController" target="com.gui.Main" relationship="DEPENDENCY">
+      <point x="-97.91666666666674" y="-172.5" />
+      <point x="2276.6829861111114" y="1070.0" />
+      <point x="1323.5861111111114" y="1070.0" />
+      <point x="1323.5861111111114" y="950.0" />
+      <point x="1580.9031249999998" y="950.0" />
+      <point x="0.0" y="227.0" />
+    </edge>
+    <edge source="com.gui.mainScreenController" target="com.gui.IControlledScreen" relationship="REALIZATION">
+      <point x="106.5" y="-128.5" />
+      <point x="1476.3361111111114" y="1000.0" />
+      <point x="1764.724652777778" y="1000.0" />
+      <point x="1764.724652777778" y="88.0" />
+      <point x="1372.43125" y="88.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.gui.LoginController" target="com.gui.ScreensController" relationship="TO_ONE">
+      <point x="58.75" y="-128.5" />
+      <point x="343.26631944444443" y="414.0" />
+      <point x="1405.4031249999998" y="414.0" />
+      <point x="1405.4031249999998" y="384.0" />
+      <point x="1427.1531249999998" y="384.0" />
+      <point x="-58.0" y="95.0" />
+    </edge>
+    <edge source="com.gui.mainScreenController" target="com.gui.ScreensController" relationship="TO_ONE">
+      <point x="-35.5" y="-128.5" />
+      <point x="1334.3361111111114" y="960.0" />
+      <point x="1401.3642361111113" y="960.0" />
+      <point x="1401.3642361111113" y="414.0" />
+      <point x="1405.4031249999998" y="414.0" />
+      <point x="1405.4031249999998" y="384.0" />
+      <point x="1427.1531249999998" y="384.0" />
+      <point x="-58.0" y="95.0" />
+    </edge>
+    <edge source="com.gui.AddEmployeeController" target="com.gui.ScreensController" relationship="TO_ONE">
+      <point x="20.916666666666742" y="-139.5" />
+      <point x="1085.8777777777782" y="960.0" />
+      <point x="1178.05625" y="960.0" />
+      <point x="1178.05625" y="414.0" />
+      <point x="1405.4031249999998" y="414.0" />
+      <point x="1405.4031249999998" y="384.0" />
+      <point x="1427.1531249999998" y="384.0" />
+      <point x="-58.0" y="95.0" />
+    </edge>
+    <edge source="com.gui.ShowEmployeeController" target="com.jdbc.model.Employee" relationship="DEPENDENCY">
+      <point x="-40.0" y="-194.5" />
+      <point x="100.0" y="1070.0" />
+      <point x="145.51631944444443" y="1070.0" />
+      <point x="145.51631944444443" y="424.0" />
+      <point x="878.2781249999999" y="424.0" />
+      <point x="878.2781249999999" y="394.0" />
+      <point x="512.4447916666663" y="394.0" />
+      <point x="87.75" y="116.5" />
+    </edge>
+    <edge source="com.gui.showMembersController" target="com.gui.IControlledScreen" relationship="REALIZATION">
+      <point x="19.583333333333258" y="-172.5" />
+      <point x="2394.1829861111114" y="1040.0" />
+      <point x="2464.7111111111117" y="1040.0" />
+      <point x="2464.7111111111117" y="88.0" />
+      <point x="1372.43125" y="88.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.gui.Main" target="com.gui.ScreensController" relationship="CREATE">
+      <point x="0.0" y="-227.0" />
+      <point x="1580.9031249999998" y="404.0" />
+      <point x="1635.1142361111113" y="404.0" />
+      <point x="1635.1142361111113" y="384.0" />
+      <point x="1543.1531249999998" y="384.0" />
+      <point x="58.0" y="95.0" />
+    </edge>
+    <edge source="com.gui.showMembersController" target="com.gui.ScreensController" relationship="DEPENDENCY">
+      <point x="-19.583333333333485" y="-172.5" />
+      <point x="2355.016319444445" y="1030.0" />
+      <point x="2422.5861111111117" y="1030.0" />
+      <point x="2422.5861111111117" y="404.0" />
+      <point x="1635.1142361111113" y="404.0" />
+      <point x="1635.1142361111113" y="384.0" />
+      <point x="1543.1531249999998" y="384.0" />
+      <point x="58.0" y="95.0" />
+    </edge>
+    <edge source="com.jdbc.dao.MemberDaoImplementationTest" target="com.jdbc.dao.MemberDaoImplementation" relationship="CREATE">
+      <point x="-133.5" y="-84.0" />
+      <point x="2979.6829861111114" y="1060.0" />
+      <point x="2671.655902777778" y="1060.0" />
+      <point x="2671.655902777778" y="1040.0" />
+      <point x="2853.4194444444447" y="1040.0" />
+      <point x="-58.25" y="95.5" />
+    </edge>
+    <edge source="com.gui.ShowEmployeeController" target="com.gui.IControlledScreen" relationship="REALIZATION">
+      <point x="-120.0" y="-194.5" />
+      <point x="20.0" y="1080.0" />
+      <point x="17.61423611111104" y="1080.0" />
+      <point x="17.61423611111104" y="88.0" />
+      <point x="1372.43125" y="88.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.gui.editEmployee" target="com.gui.ScreensController" relationship="DEPENDENCY">
+      <point x="19.583333333333485" y="-238.5" />
+      <point x="560.780902777778" y="1060.0" />
+      <point x="632.6947916666664" y="1060.0" />
+      <point x="632.6947916666664" y="404.0" />
+      <point x="1635.1142361111113" y="404.0" />
+      <point x="1635.1142361111113" y="384.0" />
+      <point x="1543.1531249999998" y="384.0" />
+      <point x="58.0" y="95.0" />
+    </edge>
+    <edge source="com.gui.editEmployee" target="com.gui.IControlledScreen" relationship="REALIZATION">
+      <point x="-58.75" y="-238.5" />
+      <point x="482.4475694444445" y="1040.0" />
+      <point x="610.6947916666664" y="1040.0" />
+      <point x="610.6947916666664" y="88.0" />
+      <point x="1372.43125" y="88.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.gui.ShowEmployeeController" target="com.gui.Main" relationship="DEPENDENCY">
+      <point x="120.0" y="-194.5" />
+      <point x="260.0" y="1070.0" />
+      <point x="1323.5861111111114" y="1070.0" />
+      <point x="1323.5861111111114" y="950.0" />
+      <point x="1580.9031249999998" y="950.0" />
+      <point x="0.0" y="227.0" />
+    </edge>
+    <edge source="com.jdbc.dao.UserDao" target="com.jdbc.model.User" relationship="CREATE">
+      <point x="-65.25" y="-51.0" />
+      <point x="2157.1142361111115" y="384.0" />
+      <point x="2115.224652777778" y="384.0" />
+      <point x="0.0" y="61.5" />
+    </edge>
+    <edge source="com.gui.AddEmployeeController" target="com.jdbc.model.Employee" relationship="CREATE">
+      <point x="-62.75" y="-139.5" />
+      <point x="1002.2111111111114" y="940.0" />
+      <point x="878.2781249999999" y="940.0" />
+      <point x="878.2781249999999" y="394.0" />
+      <point x="512.4447916666663" y="394.0" />
+      <point x="87.75" y="116.5" />
+    </edge>
+    <edge source="com.jdbc.dao.MembershipTypeDaoTest" target="com.jdbc.dao.MembershipTypeDao" relationship="CREATE">
+      <point x="-70.5" y="-106.0" />
+      <point x="2668.2645833333336" y="1050.0" />
+      <point x="2604.9194444444447" y="1050.0" />
+      <point x="-56.75" y="62.5" />
+    </edge>
+    <edge source="com.jdbc.dao.MemberDaoImplementationTest" target="com.jdbc.model.Member" relationship="CREATE">
+      <point x="133.5" y="-84.0" />
+      <point x="3246.6829861111114" y="1080.0" />
+      <point x="3501.4329861111114" y="1080.0" />
+      <point x="3501.4329861111114" y="374.0" />
+      <point x="3246.2645833333336" y="374.0" />
+      <point x="3246.2645833333336" y="364.0" />
+      <point x="3248.7645833333336" y="364.0" />
+      <point x="67.75" y="116.5" />
+    </edge>
+    <edge source="com.jdbc.model.MemberTest" target="com.jdbc.model.Member" relationship="CREATE">
+      <point x="40.0" y="-128.0" />
+      <point x="3248.9329861111114" y="374.0" />
+      <point x="3246.2645833333336" y="374.0" />
+      <point x="3246.2645833333336" y="364.0" />
+      <point x="3248.7645833333336" y="364.0" />
+      <point x="67.75" y="116.5" />
+    </edge>
+    <edge source="com.gui.editMember" target="com.gui.ScreensController" relationship="TO_ONE">
+      <point x="-58.75" y="-227.5" />
+      <point x="1643.4329861111112" y="970.0" />
+      <point x="1454.4031249999998" y="970.0" />
+      <point x="1454.4031249999998" y="414.0" />
+      <point x="1405.4031249999998" y="414.0" />
+      <point x="1405.4031249999998" y="384.0" />
+      <point x="1427.1531249999998" y="384.0" />
+      <point x="-58.0" y="95.0" />
+    </edge>
+    <edge source="com.jdbc.dao.MemberDaoImplementation" target="com.jdbc.model.Member" relationship="CREATE">
+      <point x="58.25" y="-95.5" />
+      <point x="2969.9194444444447" y="374.0" />
+      <point x="3246.2645833333336" y="374.0" />
+      <point x="3246.2645833333336" y="364.0" />
+      <point x="3248.7645833333336" y="364.0" />
+      <point x="67.75" y="116.5" />
+    </edge>
+    <edge source="com.gui.editEmployee" target="com.gui.ScreensController" relationship="TO_ONE">
+      <point x="-19.583333333333485" y="-238.5" />
+      <point x="521.614236111111" y="1050.0" />
+      <point x="621.6947916666664" y="1050.0" />
+      <point x="621.6947916666664" y="414.0" />
+      <point x="1405.4031249999998" y="414.0" />
+      <point x="1405.4031249999998" y="384.0" />
+      <point x="1427.1531249999998" y="384.0" />
+      <point x="-58.0" y="95.0" />
+    </edge>
+    <edge source="com.gui.showMembersController" target="com.jdbc.model.Member" relationship="DEPENDENCY">
+      <point x="58.749999999999886" y="-172.5" />
+      <point x="2433.349652777778" y="1050.0" />
+      <point x="2537.6694444444447" y="1050.0" />
+      <point x="2537.6694444444447" y="374.0" />
+      <point x="3246.2645833333336" y="374.0" />
+      <point x="3246.2645833333336" y="364.0" />
+      <point x="3248.7645833333336" y="364.0" />
+      <point x="67.75" y="116.5" />
+    </edge>
+    <edge source="com.gui.showMembersController" target="com.gui.ScreensController" relationship="TO_ONE">
+      <point x="-58.750000000000114" y="-172.5" />
+      <point x="2315.849652777778" y="980.0" />
+      <point x="1718.4031249999998" y="980.0" />
+      <point x="1718.4031249999998" y="414.0" />
+      <point x="1405.4031249999998" y="414.0" />
+      <point x="1405.4031249999998" y="384.0" />
+      <point x="1427.1531249999998" y="384.0" />
+      <point x="-58.0" y="95.0" />
+    </edge>
+    <edge source="com.jdbc.dao.MembershipTypeDaoTest" target="com.jdbc.dao.MembershipTypeDao" relationship="TO_ONE">
+      <point x="70.5" y="-106.0" />
+      <point x="2809.2645833333336" y="1050.0" />
+      <point x="2718.4194444444447" y="1050.0" />
+      <point x="56.75" y="62.5" />
+    </edge>
+    <edge source="com.gui.ShowEmployeeController" target="com.gui.ScreensController" relationship="DEPENDENCY">
+      <point x="40.0" y="-194.5" />
+      <point x="180.0" y="1030.0" />
+      <point x="496.79166666666674" y="1030.0" />
+      <point x="496.79166666666674" y="404.0" />
+      <point x="1635.1142361111113" y="404.0" />
+      <point x="1635.1142361111113" y="384.0" />
+      <point x="1543.1531249999998" y="384.0" />
+      <point x="58.0" y="95.0" />
+    </edge>
+    <edge source="com.jdbc.dao.EmployeeDaoTest" target="com.jdbc.dao.EmployeeDao" relationship="CREATE">
+      <point x="-52.75" y="-73.0" />
+      <point x="737.0444444444449" y="1080.0" />
+      <point x="784.7944444444449" y="1080.0" />
+      <point x="784.7944444444449" y="920.0" />
+      <point x="998.8062500000002" y="920.0" />
+      <point x="-56.25" y="117.5" />
+    </edge>
+    <edge source="com.jdbc.model.MemberTest" target="com.jdbc.model.Member" relationship="TO_ONE">
+      <point x="-40.0" y="-128.0" />
+      <point x="3168.9329861111114" y="384.0" />
+      <point x="3063.9194444444447" y="384.0" />
+      <point x="3063.9194444444447" y="364.0" />
+      <point x="3113.2645833333336" y="364.0" />
+      <point x="-67.75" y="116.5" />
+    </edge>
+    <edge source="com.jdbc.dao.MemberDao" target="com.jdbc.model.Member" relationship="DEPENDENCY">
+      <point x="0.0" y="-72.5" />
+      <point x="3399.9329861111114" y="374.0" />
+      <point x="3246.2645833333336" y="374.0" />
+      <point x="3246.2645833333336" y="364.0" />
+      <point x="3248.7645833333336" y="364.0" />
+      <point x="67.75" y="116.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.3999999999999999" showDependencies="true" x="980.0000000000002" y="958.2500000000001" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

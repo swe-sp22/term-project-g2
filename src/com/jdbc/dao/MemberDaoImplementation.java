@@ -9,12 +9,10 @@ import com.jdbc.model.Member;
 import com.jdbc.util.DatabaseConnection;
 //import com.jdbc.util.DatabaseConnection;
 
-public class MemberDaoImplementation implements MemberDao {
+public class MemberDaoImplementation {
 
     static Connection con = DatabaseConnection.getConnection();
 
-
-    @Override
     public int add(Member member) throws SQLException {
             String query = "insert into member(name,phone_no, dob,MSID , EID) values (?, ?, ?, ?, ?)";
             PreparedStatement stmt = con.prepareStatement(query);
@@ -26,7 +24,6 @@ public class MemberDaoImplementation implements MemberDao {
             return stmt.executeUpdate();
     }
 
-    @Override
     public void delete(int id) throws SQLException {
         String query = "delete from member where MID =?";
         PreparedStatement stmt = con.prepareStatement(query);
@@ -34,7 +31,6 @@ public class MemberDaoImplementation implements MemberDao {
         stmt.executeUpdate();
     }
 
-    @Override
     public Member getMember(int id) throws SQLException {
         String query = "select * from member join `membership type` where MID = ?";
         PreparedStatement stmt = con.prepareStatement(query);
@@ -56,7 +52,6 @@ public class MemberDaoImplementation implements MemberDao {
         return member;
     }
 
-    @Override
     public List<Member> getMembers() throws SQLException {
         String query = "select * from member";
         PreparedStatement stmt = con.prepareStatement(query);
@@ -76,7 +71,6 @@ public class MemberDaoImplementation implements MemberDao {
         return members;
     }
 
-    @Override
     public int update(Member member) throws SQLException {
         //TODO
         String query = "UPDATE member\n" +
