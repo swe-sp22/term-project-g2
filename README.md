@@ -108,7 +108,7 @@ System is designed based on the assumptions that a wider variety of users may us
 
 ## Appendices:
 
-![](F:\8th%20Term\Software%20Engineering\term-project-g2\Documentation\ERD.png)
+<img title="" src="file:///F:/8th Term/Software Engineering/term-project-g2/Documentation/ERD.png" alt="" data-align="center">
 
 # Software process
 
